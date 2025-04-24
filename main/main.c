@@ -10,23 +10,34 @@
 #include "driver/ledc.h"
 #include "esp_err.h"
 #include "motor/motor.h"
+#include "esp_log.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
-/* Warning:
- * For ESP32, ESP32S2, ESP32S3, ESP32C3, ESP32C2, ESP32C6, ESP32H2, ESP32P4 targets,
- * when LEDC_DUTY_RES selects the maximum duty resolution (i.e. value equal to SOC_LEDC_TIMER_BIT_WIDTH),
- * 100% duty cycle is not reachable (duty cannot be set to (2 ** SOC_LEDC_TIMER_BIT_WIDTH)).
- */
-
+static const char *TAG = "MAIN";
 
 void app_main(void)
 {
+    static bool flag = false;
     init_motor();
-    while(1)
-    {
-        accel_motor(MOTOR_CHANNEL_RU, 10);
-        accel_motor(MOTOR_CHANNEL_RL, 10);
+    ESP_LOGI(TAG, "Motor initialization done.");
 
-        accel_motor(MOTOR_CHANNEL_LU, 10);
-        accel_motor(MOTOR_CHANNEL_LL, 10);
+    while (1)
+    {
+        if (flag)
+        {
+            ESP_LOGI(TAG, "All motors set to 10%% duty");
+            accel_motor(MOTOR_CHANNEL_RU, 20);
+            accel_motor(MOTOR_CHANNEL_RL, 20);
+            accel_motor(MOTOR_CHANNEL_LU, 20);
+            accel_motor(MOTOR_CHANNEL_LL, 20);
+        } else
+        {
+            ESP_LOGI(TAG, "Motors stopped");
+            stop_motor(); // 멈추기
+        }
+
+        flag = !flag; // flag 토글
+        vTaskDelay(pdMS_TO_TICKS(2000)); // 1초 대기
     }
 }
