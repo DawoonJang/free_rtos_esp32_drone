@@ -6,7 +6,7 @@
 #define MOTOR_H
 
 #include "driver/ledc.h"
-
+#include "esp_err.h"
 
 #define LED 2;
 #define MOTOR_PIN_LU 23 // Left Upper
@@ -26,8 +26,10 @@
 #define MOTOR_FREQ          5000
 #define LEDC_DUTY_INIT      0
 
-void init_motor();
+esp_err_t motor_init();
+
 void accel_motor(ledc_channel_t channel, uint8_t duty_percent);
+
 void stop_motor();
 
 #endif //MOTOR_H

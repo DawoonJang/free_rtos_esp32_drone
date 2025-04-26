@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="22" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -19,137 +21,137 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="esp32_drone" targetName="memory.ld" />
-      <config projectName="esp32_drone" targetName="__idf_esp_app_format" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_sdio" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_cam" />
-      <config projectName="esp32_drone" targetName="__idf_esp_eth" />
-      <config projectName="esp32_drone" targetName="__idf_nvs_sec_provider" />
-      <config projectName="esp32_drone" targetName="__idf_protobuf-c" />
-      <config projectName="esp32_drone" targetName="show-efuse-table" />
-      <config projectName="esp32_drone" targetName="__idf_esp_gdbstub" />
-      <config projectName="esp32_drone" targetName="p256m" />
-      <config projectName="esp32_drone" targetName="app_check_size" />
-      <config projectName="esp32_drone" targetName="__idf_esp-tls" />
-      <config projectName="esp32_drone" targetName="__idf_perfmon" />
-      <config projectName="esp32_drone" targetName="__idf_app_update" />
-      <config projectName="esp32_drone" targetName="__idf_esp_adc" />
-      <config projectName="esp32_drone" targetName="__idf_mqtt" />
-      <config projectName="esp32_drone" targetName="__idf_pthread" />
-      <config projectName="esp32_drone" targetName="gen_project_binary" />
-      <config projectName="esp32_drone" targetName="__idf_http_parser" />
-      <config projectName="esp32_drone" targetName="__idf_esp_netif" />
-      <config projectName="esp32_drone" targetName="efuse_custom_table" />
-      <config projectName="esp32_drone" targetName="__idf_esp_partition" />
-      <config projectName="esp32_drone" targetName="__idf_vfs" />
-      <config projectName="esp32_drone" targetName="__idf_esp_https_ota" />
-      <config projectName="esp32_drone" targetName="lib" />
-      <config projectName="esp32_drone" targetName="mbedtls" />
-      <config projectName="esp32_drone" targetName="app-flash" />
-      <config projectName="esp32_drone" targetName="__idf_esp_ringbuf" />
-      <config projectName="esp32_drone" targetName="monitor" />
-      <config projectName="esp32_drone" targetName="__idf_esp_phy" />
-      <config projectName="esp32_drone" targetName="mbedx509" />
-      <config projectName="esp32_drone" targetName="__idf_newlib" />
-      <config projectName="esp32_drone" targetName="__idf_esp_mm" />
-      <config projectName="esp32_drone" targetName="everest" />
-      <config projectName="esp32_drone" targetName="__idf_esp_hid" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_pcnt" />
-      <config projectName="esp32_drone" targetName="__idf_rt" />
-      <config projectName="esp32_drone" targetName="efuse-custom-table" />
-      <config projectName="esp32_drone" targetName="__idf_cxx" />
-      <config projectName="esp32_drone" targetName="save-defconfig" />
-      <config projectName="esp32_drone" targetName="__idf_unity" />
-      <config projectName="esp32_drone" targetName="__idf_sdmmc" />
-      <config projectName="esp32_drone" targetName="__idf_esp_system" />
-      <config projectName="esp32_drone" targetName="__idf_esp_hw_support" />
-      <config projectName="esp32_drone" targetName="custom_bundle" />
-      <config projectName="esp32_drone" targetName="encrypted-flash" />
-      <config projectName="esp32_drone" targetName="__idf_fatfs" />
-      <config projectName="esp32_drone" targetName="__idf_hal" />
-      <config projectName="esp32_drone" targetName="efuse-common-table" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_sdmmc" />
-      <config projectName="esp32_drone" targetName="__idf_spi_flash" />
-      <config projectName="esp32_drone" targetName="__idf_tcp_transport" />
-      <config projectName="esp32_drone" targetName="confserver" />
-      <config projectName="esp32_drone" targetName="size-components" />
-      <config projectName="esp32_drone" targetName="efuse_common_table" />
-      <config projectName="esp32_drone" targetName="__idf_mbedtls" />
-      <config projectName="esp32_drone" targetName="apidoc" />
-      <config projectName="esp32_drone" targetName="uf2" />
-      <config projectName="esp32_drone" targetName="__idf_esp_security" />
-      <config projectName="esp32_drone" targetName="__idf_xtensa" />
-      <config projectName="esp32_drone" targetName="bootloader-flash" />
-      <config projectName="esp32_drone" targetName="__idf_soc" />
-      <config projectName="esp32_drone" targetName="merge-bin" />
-      <config projectName="esp32_drone" targetName="partition_table_bin" />
-      <config projectName="esp32_drone" targetName="__idf_esp_vfs_console" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_sdm" />
-      <config projectName="esp32_drone" targetName="partition_table-flash" />
-      <config projectName="esp32_drone" targetName="erase_flash" />
-      <config projectName="esp32_drone" targetName="menuconfig" />
-      <config projectName="esp32_drone" targetName="__idf_esp_http_client" />
-      <config projectName="esp32_drone" targetName="sections.ld.in" />
-      <config projectName="esp32_drone" targetName="bootloader" />
-      <config projectName="esp32_drone" targetName="__idf_esp_bootloader_format" />
-      <config projectName="esp32_drone" targetName="__idf_app_trace" />
-      <config projectName="esp32_drone" targetName="__idf_efuse" />
-      <config projectName="esp32_drone" targetName="__idf_esp_coex" />
-      <config projectName="esp32_drone" targetName="app" />
-      <config projectName="esp32_drone" targetName="flash" />
-      <config projectName="esp32_drone" targetName="__idf_nvs_flash" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_ledc" />
-      <config projectName="esp32_drone" targetName="__idf_spiffs" />
-      <config projectName="esp32_drone" targetName="__idf_esp_event" />
-      <config projectName="esp32_drone" targetName="__idf_esp_wifi" />
-      <config projectName="esp32_drone" targetName="__idf_esp_http_server" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_gpio" />
-      <config projectName="esp32_drone" targetName="__idf_esp_pm" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_uart" />
-      <config projectName="esp32_drone" targetName="__idf_wear_levelling" />
-      <config projectName="esp32_drone" targetName="__idf_bootloader_support" />
-      <config projectName="esp32_drone" targetName="partition-table" />
-      <config projectName="esp32_drone" targetName="__idf_protocomm" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_gptimer" />
-      <config projectName="esp32_drone" targetName="__idf_log" />
-      <config projectName="esp32_drone" targetName="uf2-app" />
-      <config projectName="esp32_drone" targetName="__idf_esp_common" />
-      <config projectName="esp32_drone" targetName="encrypted-partition-table-flash" />
-      <config projectName="esp32_drone" targetName="__idf_driver" />
-      <config projectName="esp32_drone" targetName="efuse_test_table" />
-      <config projectName="esp32_drone" targetName="__idf_esp_timer" />
-      <config projectName="esp32_drone" targetName="partition-table-flash" />
-      <config projectName="esp32_drone" targetName="__idf_cmock" />
-      <config projectName="esp32_drone" targetName="__ldgen_output_sections.ld" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_sdspi" />
-      <config projectName="esp32_drone" targetName="__idf_main" />
-      <config projectName="esp32_drone" targetName="__idf_esp_rom" />
-      <config projectName="esp32_drone" targetName="__idf_espcoredump" />
-      <config projectName="esp32_drone" targetName="__idf_esp_lcd" />
-      <config projectName="esp32_drone" targetName="__idf_freertos" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_dac" />
-      <config projectName="esp32_drone" targetName="__idf_wifi_provisioning" />
-      <config projectName="esp32_drone" targetName="__idf_esp_https_server" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_rmt" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_i2c" />
-      <config projectName="esp32_drone" targetName="__idf_esp_local_ctrl" />
-      <config projectName="esp32_drone" targetName="size" />
-      <config projectName="esp32_drone" targetName="esp32_drone.elf" />
-      <config projectName="esp32_drone" targetName="size-files" />
-      <config projectName="esp32_drone" targetName="__idf_console" />
-      <config projectName="esp32_drone" targetName="partition_table" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_mcpwm" />
-      <config projectName="esp32_drone" targetName="__idf_lwip" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_i2s" />
-      <config projectName="esp32_drone" targetName="__idf_esp_driver_spi" />
-      <config projectName="esp32_drone" targetName="_project_elf_src" />
-      <config projectName="esp32_drone" targetName="encrypted-app-flash" />
-      <config projectName="esp32_drone" targetName="__idf_json" />
-      <config projectName="esp32_drone" targetName="__idf_heap" />
-      <config projectName="esp32_drone" targetName="encrypted-bootloader-flash" />
-      <config projectName="esp32_drone" targetName="show_efuse_table" />
-      <config projectName="esp32_drone" targetName="__idf_wpa_supplicant" />
-      <config projectName="esp32_drone" targetName="mbedcrypto" />
+      <config projectName="esp" targetName="__idf_json" />
+      <config projectName="esp" targetName="__idf_heap" />
+      <config projectName="esp" targetName="__idf_esp_driver_i2c" />
+      <config projectName="esp" targetName="__idf_esp_driver_rmt" />
+      <config projectName="esp" targetName="__idf_fatfs" />
+      <config projectName="esp" targetName="__idf_vfs" />
+      <config projectName="esp" targetName="efuse-common-table" />
+      <config projectName="esp" targetName="__idf_esp_https_ota" />
+      <config projectName="esp" targetName="_project_elf_src" />
+      <config projectName="esp" targetName="encrypted-flash" />
+      <config projectName="esp" targetName="__idf_esp_ringbuf" />
+      <config projectName="esp" targetName="__idf_wifi_provisioning" />
+      <config projectName="esp" targetName="__idf_app_update" />
+      <config projectName="esp" targetName="__idf_esp_driver_sdmmc" />
+      <config projectName="esp" targetName="erase_flash" />
+      <config projectName="esp" targetName="custom_bundle" />
+      <config projectName="esp" targetName="__idf_esp-tls" />
+      <config projectName="esp" targetName="__idf_esp_driver_sdio" />
+      <config projectName="esp" targetName="__idf_xtensa" />
+      <config projectName="esp" targetName="bootloader-flash" />
+      <config projectName="esp" targetName="show-efuse-table" />
+      <config projectName="esp" targetName="__idf_esp_driver_i2s" />
+      <config projectName="esp" targetName="sections.ld.in" />
+      <config projectName="esp" targetName="__idf_esp_http_client" />
+      <config projectName="esp" targetName="__idf_lwip" />
+      <config projectName="esp" targetName="efuse-custom-table" />
+      <config projectName="esp" targetName="__idf_esp_vfs_console" />
+      <config projectName="esp" targetName="__idf_esp_driver_spi" />
+      <config projectName="esp" targetName="__idf_wpa_supplicant" />
+      <config projectName="esp" targetName="everest" />
+      <config projectName="esp" targetName="__idf_esp_driver_gpio" />
+      <config projectName="esp" targetName="__idf_esp_driver_uart" />
+      <config projectName="esp" targetName="encrypted-bootloader-flash" />
+      <config projectName="esp" targetName="app_check_size" />
+      <config projectName="esp" targetName="__idf_mqtt" />
+      <config projectName="esp" targetName="gen_project_binary" />
+      <config projectName="esp" targetName="__idf_protobuf-c" />
+      <config projectName="esp" targetName="uf2" />
+      <config projectName="esp" targetName="__idf_esp_driver_cam" />
+      <config projectName="esp" targetName="flash" />
+      <config projectName="esp" targetName="__idf_nvs_flash" />
+      <config projectName="esp" targetName="__idf_nvs_sec_provider" />
+      <config projectName="esp" targetName="__idf_esp_pm" />
+      <config projectName="esp" targetName="show_efuse_table" />
+      <config projectName="esp" targetName="__idf_esp_gdbstub" />
+      <config projectName="esp" targetName="__idf_esp_app_format" />
+      <config projectName="esp" targetName="memory.ld" />
+      <config projectName="esp" targetName="__idf_perfmon" />
+      <config projectName="esp" targetName="__idf_esp_netif" />
+      <config projectName="esp" targetName="__idf_console" />
+      <config projectName="esp" targetName="__idf_cmock" />
+      <config projectName="esp" targetName="__idf_pthread" />
+      <config projectName="esp" targetName="__idf_esp_driver_sdspi" />
+      <config projectName="esp" targetName="__idf_esp_driver_pcnt" />
+      <config projectName="esp" targetName="__idf_esp_https_server" />
+      <config projectName="esp" targetName="__idf_unity" />
+      <config projectName="esp" targetName="__idf_esp_system" />
+      <config projectName="esp" targetName="__idf_esp_timer" />
+      <config projectName="esp" targetName="lib" />
+      <config projectName="esp" targetName="esp.elf" />
+      <config projectName="esp" targetName="mbedtls" />
+      <config projectName="esp" targetName="mbedx509" />
+      <config projectName="esp" targetName="partition-table-flash" />
+      <config projectName="esp" targetName="__idf_efuse" />
+      <config projectName="esp" targetName="__idf_tcp_transport" />
+      <config projectName="esp" targetName="partition_table" />
+      <config projectName="esp" targetName="apidoc" />
+      <config projectName="esp" targetName="__idf_protocomm" />
+      <config projectName="esp" targetName="__idf_esp_common" />
+      <config projectName="esp" targetName="__idf_log" />
+      <config projectName="esp" targetName="__idf_freertos" />
+      <config projectName="esp" targetName="size-files" />
+      <config projectName="esp" targetName="__idf_esp_driver_mcpwm" />
+      <config projectName="esp" targetName="__idf_esp_local_ctrl" />
+      <config projectName="esp" targetName="uf2-app" />
+      <config projectName="esp" targetName="merge-bin" />
+      <config projectName="esp" targetName="__idf_esp_bootloader_format" />
+      <config projectName="esp" targetName="__idf_esp_wifi" />
+      <config projectName="esp" targetName="__idf_esp_rom" />
+      <config projectName="esp" targetName="__idf_espcoredump" />
+      <config projectName="esp" targetName="__idf_esp_driver_sdm" />
+      <config projectName="esp" targetName="__idf_esp_lcd" />
+      <config projectName="esp" targetName="__idf_spiffs" />
+      <config projectName="esp" targetName="__idf_esp_coex" />
+      <config projectName="esp" targetName="__idf_sdmmc" />
+      <config projectName="esp" targetName="__idf_esp_driver_ledc" />
+      <config projectName="esp" targetName="__idf_esp_http_server" />
+      <config projectName="esp" targetName="mbedcrypto" />
+      <config projectName="esp" targetName="menuconfig" />
+      <config projectName="esp" targetName="partition_table-flash" />
+      <config projectName="esp" targetName="partition_table_bin" />
+      <config projectName="esp" targetName="__idf_app_trace" />
+      <config projectName="esp" targetName="bootloader" />
+      <config projectName="esp" targetName="__idf_esp_security" />
+      <config projectName="esp" targetName="efuse_custom_table" />
+      <config projectName="esp" targetName="__idf_driver" />
+      <config projectName="esp" targetName="__idf_esp_partition" />
+      <config projectName="esp" targetName="encrypted-app-flash" />
+      <config projectName="esp" targetName="__idf_esp_eth" />
+      <config projectName="esp" targetName="__idf_soc" />
+      <config projectName="esp" targetName="__idf_wear_levelling" />
+      <config projectName="esp" targetName="__idf_esp_event" />
+      <config projectName="esp" targetName="p256m" />
+      <config projectName="esp" targetName="efuse_common_table" />
+      <config projectName="esp" targetName="size" />
+      <config projectName="esp" targetName="__idf_esp_adc" />
+      <config projectName="esp" targetName="__idf_esp_driver_gptimer" />
+      <config projectName="esp" targetName="__idf_hal" />
+      <config projectName="esp" targetName="__idf_mbedtls" />
+      <config projectName="esp" targetName="__idf_esp_hw_support" />
+      <config projectName="esp" targetName="confserver" />
+      <config projectName="esp" targetName="__idf_bootloader_support" />
+      <config projectName="esp" targetName="__idf_esp_hid" />
+      <config projectName="esp" targetName="size-components" />
+      <config projectName="esp" targetName="__idf_esp_driver_dac" />
+      <config projectName="esp" targetName="__idf_cxx" />
+      <config projectName="esp" targetName="__idf_http_parser" />
+      <config projectName="esp" targetName="app" />
+      <config projectName="esp" targetName="__idf_newlib" />
+      <config projectName="esp" targetName="__idf_spi_flash" />
+      <config projectName="esp" targetName="__idf_esp_mm" />
+      <config projectName="esp" targetName="partition-table" />
+      <config projectName="esp" targetName="__ldgen_output_sections.ld" />
+      <config projectName="esp" targetName="app-flash" />
+      <config projectName="esp" targetName="__idf_main" />
+      <config projectName="esp" targetName="monitor" />
+      <config projectName="esp" targetName="__idf_esp_phy" />
+      <config projectName="esp" targetName="__idf_rt" />
+      <config projectName="esp" targetName="efuse_test_table" />
+      <config projectName="esp" targetName="save-defconfig" />
+      <config projectName="esp" targetName="encrypted-partition-table-flash" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -157,18 +159,28 @@
       <configuration PROFILE_NAME="Debug-esp" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="esp">
         <ADDITIONAL_GENERATION_ENVIRONMENT>
           <envs>
-            <env name="IDF_PATH" value="~/esp/esp-idf" />
-            <env name="PATH" value="$USER_HOME$/esp/esp-idf/components/espcoredump:/Users/dawoonjang/esp/esp-idf/components/partition_table:/Users/dawoonjang/esp/esp-idf/components/app_update:/Users/dawoonjang/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/Users/dawoonjang/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin:/Users/dawoonjang/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/Users/dawoonjang/.espressif/tools/openocd-esp32/v0.12.0-esp32-20241016/openocd-esp32/bin:/Users/dawoonjang/.espressif/tools/ninja/1.12.1/:/Users/dawoonjang/.espressif/python_env/idf5.4_py3.12_env/bin:/Users/dawoonjang/esp/esp-idf/tools:/Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin:/opt/homebrew/opt/node@22/bin:/Users/dawoonjang/mambaforge/bin:/Users/dawoonjang/mambaforge/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/ST/STM32CubeCLT_1.18.0:/opt/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin:/opt/ST/STM32CubeCLT_1.18.0/STM32CubeProgrammer/bin:/opt/ST/STM32CubeCLT_1.18.0/STLink-gdb-server/bin:/opt/ST/STM32CubeCLT_1.18.0/CMake/bin:/opt/ST/STM32CubeCLT_1.18.0/Ninja/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/dawoonjang/.cargo/bin" />
+            <env name="PATH" value="$USER_HOME$/esp/esp-idf/components/espcoredump:/Users/dawoonjang/esp/esp-idf/components/partition_table:/Users/dawoonjang/esp/esp-idf/components/app_update:/Users/dawoonjang/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/Users/dawoonjang/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/Users/dawoonjang/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin:/Users/dawoonjang/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin:/Users/dawoonjang/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/Users/dawoonjang/.espressif/tools/openocd-esp32/v0.12.0-esp32-20241016/openocd-esp32/bin:/Users/dawoonjang/.espressif/tools/ninja/1.12.1/:/Users/dawoonjang/.espressif/python_env/idf5.4_py3.12_env/bin:/Users/dawoonjang/esp/esp-idf/tools:/Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin:/opt/homebrew/opt/node@22/bin:/Users/dawoonjang/mambaforge/bin:/Users/dawoonjang/mambaforge/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/ST/STM32CubeCLT_1.18.0:/opt/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin:/opt/ST/STM32CubeCLT_1.18.0/STM32CubeProgrammer/bin:/opt/ST/STM32CubeCLT_1.18.0/STLink-gdb-server/bin:/opt/ST/STM32CubeCLT_1.18.0/CMake/bin:/opt/ST/STM32CubeCLT_1.18.0/Ninja/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/dawoonjang/.cargo/bin" />
           </envs>
         </ADDITIONAL_GENERATION_ENVIRONMENT>
       </configuration>
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cbd357f-c197-4521-9f68-6d2bb4369909" name="변경" comment="motor_config">
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/export.sh" beforeDir="false" afterPath="$PROJECT_DIR$/export.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/motor/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/motor/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,11 +195,6 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$USER_HOME$/esp/esp-idf" value="4c2820d377d1375e787bcef612f0c32c1427d183" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -198,18 +205,10 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/espressif/esp-idf.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/DawoonJang/esp32_drone.git&quot;,
     &quot;accountId&quot;: &quot;fa550985-f05f-4f05-b7ff-65f082803940&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/main/main.c" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main/motor/motor.h" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -220,708 +219,692 @@
     <option name="productBranch" value="Classic" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2w8MtM4A2FYo68KAFnS8frui81C" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2wFCI6p6veEDjysIhT5ar8DKJlz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker..devcontainer/Dockerfile.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "SHELLCHECK.PATH": "/Users/dawoonjang/Library/Application Support/JetBrains/CLion2025.1/plugins/Shell Script/shellcheck",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/dawoonjang/Documents/GitHub/esp32_drone",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C/C++",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;/Users/dawoonjang/Library/Application Support/JetBrains/CLion2025.1/plugins/Shell Script/shellcheck&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/motor" />
-    </key>
-  </component>
-  <component name="RunManager" selected="CMake 애플리케이션.flash">
-    <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
+}</component>
+  <component name="RunManager" selected="CMake 애플리케이션.monitor">
+    <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_app_update" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_app_update" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_app_update" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_update" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_bootloader_support" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_bootloader_support" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_bootloader_support" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_bootloader_support" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_cmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_cmock" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_cmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_cmock" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_console" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_console" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_cxx" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_cxx" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_cxx" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_cxx" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_driver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_driver" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_driver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_driver" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_efuse" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_efuse" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_efuse" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_efuse" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp-tls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp-tls" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp-tls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp-tls" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_adc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_adc" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_adc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_adc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_app_format" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_app_format" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_app_format" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_app_format" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_bootloader_format" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_bootloader_format" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_bootloader_format" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_bootloader_format" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_coex" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_coex" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_coex" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_coex" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_common" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_common" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_common" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_common" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_cam" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_cam" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_cam" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_cam" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_dac" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_dac" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_dac" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_dac" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_gpio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_gpio" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_gpio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_gpio" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_gptimer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_gptimer" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_gptimer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_gptimer" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_i2c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_i2c" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_i2c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_i2c" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_i2s" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_i2s" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_i2s" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_i2s" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_ledc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_ledc" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_ledc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_ledc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_mcpwm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_mcpwm" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_mcpwm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_mcpwm" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_pcnt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_pcnt" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_pcnt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_pcnt" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_rmt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_rmt" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_rmt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_rmt" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_sdio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_sdio" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_sdio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_sdio" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_sdm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_sdm" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_sdm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_sdm" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_sdmmc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_sdmmc" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_sdmmc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_sdmmc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_sdspi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_sdspi" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_sdspi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_sdspi" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_spi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_spi" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_spi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_spi" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_driver_uart" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_driver_uart" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_driver_uart" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_driver_uart" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_eth" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_eth" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_eth" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_eth" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_event" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_event" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_event" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_event" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_gdbstub" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_gdbstub" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_gdbstub" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_gdbstub" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_hid" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_hid" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_hid" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_hid" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_http_client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_http_client" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_http_client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_http_client" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_http_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_http_server" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_http_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_http_server" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_https_ota" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_https_ota" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_https_ota" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_https_ota" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_https_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_https_server" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_https_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_https_server" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_hw_support" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_hw_support" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_hw_support" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_hw_support" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_lcd" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_lcd" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_lcd" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_lcd" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_local_ctrl" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_local_ctrl" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_local_ctrl" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_local_ctrl" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_mm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_mm" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_mm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_mm" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_netif" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_netif" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_netif" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_netif" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_partition" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_partition" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_partition" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_partition" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_phy" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_phy" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_phy" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_phy" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_pm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_pm" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_pm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_pm" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_ringbuf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_ringbuf" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_ringbuf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_ringbuf" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_rom" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_rom" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_rom" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_rom" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_security" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_security" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_security" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_security" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_system" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_system" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_timer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_timer" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_timer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_timer" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_vfs_console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_vfs_console" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_vfs_console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_vfs_console" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_esp_wifi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_esp_wifi" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_esp_wifi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_esp_wifi" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_espcoredump" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_espcoredump" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_espcoredump" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_espcoredump" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_fatfs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_fatfs" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_fatfs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_fatfs" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_freertos" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_freertos" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_freertos" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_freertos" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_hal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_hal" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_hal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_hal" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_heap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_heap" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_heap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_heap" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_http_parser" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_http_parser" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_http_parser" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_http_parser" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_json" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_json" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_json" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_json" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_log" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_log" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_log" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_log" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_lwip" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_lwip" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_lwip" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_lwip" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_main" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_main" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_mbedtls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_mbedtls" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_mbedtls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_mbedtls" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_mqtt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_mqtt" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_mqtt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_mqtt" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_newlib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_newlib" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_newlib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_newlib" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_nvs_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_nvs_flash" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_nvs_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_nvs_flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_nvs_sec_provider" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_nvs_sec_provider" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_nvs_sec_provider" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_nvs_sec_provider" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_perfmon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_perfmon" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_perfmon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_perfmon" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_protobuf-c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_protobuf-c" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_protobuf-c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_protobuf-c" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_protocomm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_protocomm" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_protocomm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_protocomm" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_pthread" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_pthread" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_pthread" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_pthread" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_rt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_rt" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_rt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_rt" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_sdmmc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_sdmmc" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_sdmmc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_sdmmc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_soc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_soc" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_soc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_soc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_spi_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_spi_flash" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_spi_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_spi_flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_spiffs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_spiffs" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_spiffs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_spiffs" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_tcp_transport" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_tcp_transport" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_tcp_transport" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_tcp_transport" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_unity" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_unity" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_unity" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_unity" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_vfs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_vfs" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_vfs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_vfs" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_wear_levelling" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_wear_levelling" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_wear_levelling" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_wear_levelling" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_wifi_provisioning" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_wifi_provisioning" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_wifi_provisioning" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_wifi_provisioning" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_wpa_supplicant" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_wpa_supplicant" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_wpa_supplicant" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_wpa_supplicant" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_xtensa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__idf_xtensa" CONFIG_NAME="Debug-esp">
+    <configuration name="__idf_xtensa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_xtensa" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__ldgen_output_sections.ld" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="__ldgen_output_sections.ld" CONFIG_NAME="Debug-esp">
+    <configuration name="__ldgen_output_sections.ld" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__ldgen_output_sections.ld" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_project_elf_src" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="_project_elf_src" CONFIG_NAME="Debug-esp">
+    <configuration name="_project_elf_src" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="_project_elf_src" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="apidoc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="apidoc" CONFIG_NAME="Debug-esp">
+    <configuration name="apidoc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="apidoc" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="app-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="app-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="app-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="app" CONFIG_NAME="Debug-esp">
+    <configuration name="app" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="app" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app_check_size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="app_check_size" CONFIG_NAME="Debug-esp">
+    <configuration name="app_check_size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="app_check_size" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bootloader-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="bootloader-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="bootloader-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="bootloader-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bootloader" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="bootloader" CONFIG_NAME="Debug-esp">
+    <configuration name="bootloader" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="bootloader" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="confserver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="confserver" CONFIG_NAME="Debug-esp">
+    <configuration name="confserver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="confserver" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="custom_bundle" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="custom_bundle" CONFIG_NAME="Debug-esp">
+    <configuration name="custom_bundle" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="custom_bundle" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="efuse-common-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="efuse-common-table" CONFIG_NAME="Debug-esp">
+    <configuration name="efuse-common-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="efuse-common-table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="efuse-custom-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="efuse-custom-table" CONFIG_NAME="Debug-esp">
+    <configuration name="efuse-custom-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="efuse-custom-table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="efuse_common_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="efuse_common_table" CONFIG_NAME="Debug-esp">
+    <configuration name="efuse_common_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="efuse_common_table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="efuse_custom_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="efuse_custom_table" CONFIG_NAME="Debug-esp">
+    <configuration name="efuse_custom_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="efuse_custom_table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="efuse_test_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="efuse_test_table" CONFIG_NAME="Debug-esp">
+    <configuration name="efuse_test_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="efuse_test_table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="encrypted-app-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="encrypted-app-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="encrypted-app-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="encrypted-app-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="encrypted-bootloader-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="encrypted-bootloader-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="encrypted-bootloader-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="encrypted-bootloader-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="encrypted-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="encrypted-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="encrypted-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="encrypted-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="encrypted-partition-table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="encrypted-partition-table-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="encrypted-partition-table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="encrypted-partition-table-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="erase_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="erase_flash" CONFIG_NAME="Debug-esp">
+    <configuration name="erase_flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="erase_flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="esp32_drone.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="esp32_drone.elf" CONFIG_NAME="Debug-esp" RUN_TARGET_PROJECT_NAME="esp32_drone" RUN_TARGET_NAME="esp32_drone.elf">
+    <configuration name="esp.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="esp.elf" CONFIG_NAME="Debug-esp" RUN_TARGET_PROJECT_NAME="esp" RUN_TARGET_NAME="esp.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="everest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="everest" CONFIG_NAME="Debug-esp">
+    <configuration name="everest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="everest" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="flash" CONFIG_NAME="Debug-esp">
+    <configuration name="flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gen_project_binary" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="gen_project_binary" CONFIG_NAME="Debug-esp">
+    <configuration name="gen_project_binary" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="gen_project_binary" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="lib" CONFIG_NAME="Debug-esp">
+    <configuration name="lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="lib" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mbedcrypto" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="mbedcrypto" CONFIG_NAME="Debug-esp">
+    <configuration name="mbedcrypto" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="mbedcrypto" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mbedtls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="mbedtls" CONFIG_NAME="Debug-esp">
+    <configuration name="mbedtls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="mbedtls" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mbedx509" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="mbedx509" CONFIG_NAME="Debug-esp">
+    <configuration name="mbedx509" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="mbedx509" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="memory.ld" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="memory.ld" CONFIG_NAME="Debug-esp">
+    <configuration name="memory.ld" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="memory.ld" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="menuconfig" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="menuconfig" CONFIG_NAME="Debug-esp">
+    <configuration name="menuconfig" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="menuconfig" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="merge-bin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="merge-bin" CONFIG_NAME="Debug-esp">
+    <configuration name="merge-bin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="merge-bin" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="monitor" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="monitor" CONFIG_NAME="Debug-esp">
+    <configuration name="monitor" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="monitor" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="p256m" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="p256m" CONFIG_NAME="Debug-esp">
+    <configuration name="p256m" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="p256m" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition-table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="partition-table-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="partition-table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="partition-table-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="partition-table" CONFIG_NAME="Debug-esp">
+    <configuration name="partition-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="partition-table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition_table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="partition_table-flash" CONFIG_NAME="Debug-esp">
+    <configuration name="partition_table-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="partition_table-flash" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="partition_table" CONFIG_NAME="Debug-esp">
+    <configuration name="partition_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="partition_table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition_table_bin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="partition_table_bin" CONFIG_NAME="Debug-esp">
+    <configuration name="partition_table_bin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="partition_table_bin" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="save-defconfig" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="save-defconfig" CONFIG_NAME="Debug-esp">
+    <configuration name="save-defconfig" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="save-defconfig" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sections.ld.in" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="sections.ld.in" CONFIG_NAME="Debug-esp">
+    <configuration name="sections.ld.in" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="sections.ld.in" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="show-efuse-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="show-efuse-table" CONFIG_NAME="Debug-esp">
+    <configuration name="show-efuse-table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="show-efuse-table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="show_efuse_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="show_efuse_table" CONFIG_NAME="Debug-esp">
+    <configuration name="show_efuse_table" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="show_efuse_table" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="size-components" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="size-components" CONFIG_NAME="Debug-esp">
+    <configuration name="size-components" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="size-components" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="size-files" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="size-files" CONFIG_NAME="Debug-esp">
+    <configuration name="size-files" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="size-files" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="size" CONFIG_NAME="Debug-esp">
+    <configuration name="size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="size" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uf2-app" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="uf2-app" CONFIG_NAME="Debug-esp">
+    <configuration name="uf2-app" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="uf2-app" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uf2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp32_drone" TARGET_NAME="uf2" CONFIG_NAME="Debug-esp">
+    <configuration name="uf2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="uf2" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
-    </configuration>
-    <configuration name=".devcontainer/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value=".devcontainer/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="CMake 애플리케이션.bootloader" />
@@ -1040,7 +1023,7 @@
       <item itemvalue="CMake 애플리케이션.save-defconfig" />
       <item itemvalue="CMake 애플리케이션.__ldgen_output_sections.ld" />
       <item itemvalue="CMake 애플리케이션._project_elf_src" />
-      <item itemvalue="CMake 애플리케이션.esp32_drone.elf" />
+      <item itemvalue="CMake 애플리케이션.esp.elf" />
       <item itemvalue="CMake 애플리케이션.size" />
       <item itemvalue="CMake 애플리케이션.size-components" />
       <item itemvalue="CMake 애플리케이션.size-files" />
@@ -1055,45 +1038,21 @@
       <item itemvalue="CMake 애플리케이션.partition_table" />
       <item itemvalue="CMake 애플리케이션.partition_table-flash" />
       <item itemvalue="CMake 애플리케이션.show_efuse_table" />
-      <item itemvalue="Docker..devcontainer/Dockerfile" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker..devcontainer/Dockerfile" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="9cbd357f-c197-4521-9f68-6d2bb4369909" name="변경" comment="" />
-      <created>1745418960635</created>
+      <changelist id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="" />
+      <created>1745627851880</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1745418960635</updated>
-      <workItem from="1745418961687" duration="655000" />
-      <workItem from="1745420519983" duration="26000" />
-      <workItem from="1745420554080" duration="1000" />
-      <workItem from="1745420628291" duration="8034000" />
-      <workItem from="1745499398520" duration="130000" />
-      <workItem from="1745499539823" duration="2220000" />
+      <updated>1745627851880</updated>
+      <workItem from="1745627853098" duration="66000" />
+      <workItem from="1745627935674" duration="208000" />
+      <workItem from="1745628154751" duration="742000" />
+      <workItem from="1745632111961" duration="3335000" />
+      <workItem from="1745636031141" duration="3766000" />
     </task>
-    <task id="LOCAL-00001" summary="ledc_test_commit">
-      <option name="closed" value="true" />
-      <created>1745421330921</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745421330921</updated>
-    </task>
-    <task id="LOCAL-00002" summary="motor_config">
-      <option name="closed" value="true" />
-      <created>1745500547896</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1745500547896</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1104,9 +1063,8 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ledc_test_commit" />
-    <MESSAGE value="motor_config" />
-    <option name="LAST_COMMIT_MESSAGE" value="motor_config" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
