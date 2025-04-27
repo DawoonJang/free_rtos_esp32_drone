@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
@@ -166,21 +166,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="mpu setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/export.sh" beforeDir="false" afterPath="$PROJECT_DIR$/export.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/motor/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/motor/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,6 +229,7 @@
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
     &quot;SHELLCHECK.PATH&quot;: &quot;/Users/dawoonjang/Library/Application Support/JetBrains/CLion2025.1/plugins/Shell Script/shellcheck&quot;,
+    &quot;Shell Script.flash_monitor.executor&quot;: &quot;Run&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -246,11 +239,16 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake 애플리케이션.monitor">
+  <component name="RunManager" selected="Shell Script.flash_monitor">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -906,6 +904,21 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="flash_monitor" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value=". $USER_HOME$/esp/esp-idf/export.sh ; idf.py flash monitor" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="CMake 애플리케이션.bootloader" />
       <item itemvalue="CMake 애플리케이션.efuse-common-table" />
@@ -1038,6 +1051,7 @@
       <item itemvalue="CMake 애플리케이션.partition_table" />
       <item itemvalue="CMake 애플리케이션.partition_table-flash" />
       <item itemvalue="CMake 애플리케이션.show_efuse_table" />
+      <item itemvalue="Shell Script.flash_monitor" />
     </list>
   </component>
   <component name="TaskManager">
@@ -1051,8 +1065,19 @@
       <workItem from="1745627935674" duration="208000" />
       <workItem from="1745628154751" duration="742000" />
       <workItem from="1745632111961" duration="3335000" />
-      <workItem from="1745636031141" duration="3766000" />
+      <workItem from="1745636031141" duration="3841000" />
+      <workItem from="1745757729588" duration="1927000" />
+      <workItem from="1745759671328" duration="8289000" />
     </task>
+    <task id="LOCAL-00001" summary="mpu setup">
+      <option name="closed" value="true" />
+      <created>1745639876156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745639876156</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1062,6 +1087,10 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mpu setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="mpu setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
