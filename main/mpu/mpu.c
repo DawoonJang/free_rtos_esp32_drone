@@ -194,9 +194,9 @@ void mpu9250_task(void *pvParameters)
             sensor_mpu9250_data.calidbrated_gyro_z = (float) sensor_mpu9250_data.gyro_z / GYROXYZ_TO_DEGREES_PER_SEC;
 
             // 자이로 적분 (필요 시)
-            gyAngleX += sensor_mpu9250_data.calidbrated_gyro_x * dt;
-            gyAngleY += sensor_mpu9250_data.calidbrated_gyro_y * dt;
-            gyAngleZ += sensor_mpu9250_data.calidbrated_gyro_z * dt;
+            gyAngleX += sensor_mpu9250_data.calidbrated_gyro_x * sensor_mpu9250_data.delta_t;
+            gyAngleY += sensor_mpu9250_data.calidbrated_gyro_y * sensor_mpu9250_data.delta_t;
+            gyAngleZ += sensor_mpu9250_data.calidbrated_gyro_z * sensor_mpu9250_data.delta_t;
 
             // 가속도기 기반 각도
             const double AcYZD = sqrt(pow(sensor_mpu9250_data.acc_y, 2) + pow(sensor_mpu9250_data.acc_z, 2));
@@ -208,10 +208,12 @@ void mpu9250_task(void *pvParameters)
 
             // Complementary Filter
             sensor_mpu9250_data.complemented_angle_x =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.calidbrated_gyro_x * dt)
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.calidbrated_gyro_x *
+                             sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleX;
             sensor_mpu9250_data.complemented_angle_y =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.calidbrated_gyro_y * dt)
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.calidbrated_gyro_y *
+                             sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleY;
             sensor_mpu9250_data.complemented_angle_z = gyAngleZ;
 
