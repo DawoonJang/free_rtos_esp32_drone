@@ -26,13 +26,10 @@
 #define MOTOR_FREQ          5000
 #define LEDC_DUTY_INIT      0
 
-const double Kp = 4.0;
-const double Kd = 4.0;
-const double Ki = 4.0;
 
 esp_err_t motor_init();
 
-void accel_motor(ledc_channel_t channel, uint8_t duty_percent);
+void accel_motor(const ledc_channel_t channel, const uint32_t speed);
 
 void stop_motor();
 

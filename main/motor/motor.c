@@ -8,17 +8,12 @@
 
 static const char *TAG = "MOTOR";
 
-extern double tAngleX, tAngleY, tAngleZ;
-extern uint32_t throttle;
+const double Kp = 4.0;
+const double Kd = 4.0;
+const double Ki = 4.0;
 
-// MPU 데이터 받아오는 구조체
-extern mpu9250_data_t sensor_mpu9250_data;
-
-// 내부 상태
-static double AcXOff, AcYOff, AcZOff;
-static double GyXOff, GyYOff, GyZOff;
-
-static unsigned long t_prev = 0;
+double tAngleX, tAngleY, tAngleZ;
+uint32_t throttle;
 
 esp_err_t motor_init()
 {
@@ -89,17 +84,14 @@ void stop_motor()
 void motor_task(void *pvParameters)
 {
     static double ResX, ResY, ResZ;
-
-    t_prev = esp_timer_get_time();
     mpu9250_data_t *p_mpu9250_data = get_mpu9250_data();
 
     while (1)
     {
-        if (!sensor_mpu9250_data.is_calibrated)
+        if (!p_mpu9250_data->is_calibrated)
         {
             vTaskDelay(pdMS_TO_TICKS(100));
         }
-
 
         if (throttle == 0)
         {
@@ -108,7 +100,7 @@ void motor_task(void *pvParameters)
             p_mpu9250_data->complemented_angle_z = 0;
         }
 
-        // PID 제어
+        // PID Control
         const double eAngleX = tAngleX - p_mpu9250_data->complemented_angle_x;
         const double eAngleY = tAngleY - p_mpu9250_data->complemented_angle_y;
         const double eAngleZ = tAngleZ - p_mpu9250_data->complemented_angle_z;
@@ -146,6 +138,17 @@ void motor_task(void *pvParameters)
         accel_motor(MOTOR_CHANNEL_RU, speedB);
         accel_motor(MOTOR_CHANNEL_RL, speedC);
         accel_motor(MOTOR_CHANNEL_LL, speedD);
+
+        // SET LOG
+        // ESP_LOGE(TAG,
+        //          "Speed A:%ld B:%ld C:%ld D:%ld | Throttle:%ld BalX:%.2f BalY:%.2f BalZ:%.2f | AngleX:%.2f AngleY:%.2f AngleZ:%.2f",
+        //          speedA, speedB, speedC, speedD,
+        //          throttle, BalX, BalY, BalZ,
+        //          p_mpu9250_data->complemented_angle_x,
+        //          p_mpu9250_data->complemented_angle_y,
+        //          p_mpu9250_data->complemented_angle_z
+        // );
+
 
         // 주기 10ms
         vTaskDelay(pdMS_TO_TICKS(10));

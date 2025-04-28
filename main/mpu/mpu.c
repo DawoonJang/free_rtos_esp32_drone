@@ -217,13 +217,25 @@ void mpu9250_task(void *pvParameters)
                     + (1.0 - ALPHA) * acAngleY;
             sensor_mpu9250_data.complemented_angle_z = gyAngleZ;
 
-            // (추가) 필요하면 이 값을 motor task에서 사용
+            // SET LOG
+            ESP_LOGI(TAG,
+                     "ACC_RAW X:%d Y:%d Z:%d | GYRO_RAW X:%d Y:%d Z:%d | ANGLE X:%.2f Y:%.2f Z:%.2f",
+                     sensor_mpu9250_data.acc_x,
+                     sensor_mpu9250_data.acc_y,
+                     sensor_mpu9250_data.acc_z,
+                     sensor_mpu9250_data.gyro_x,
+                     sensor_mpu9250_data.gyro_y,
+                     sensor_mpu9250_data.gyro_z,
+                     sensor_mpu9250_data.complemented_angle_x,
+                     sensor_mpu9250_data.complemented_angle_y,
+                     sensor_mpu9250_data.complemented_angle_z
+            );
         }
         else
         {
             ESP_LOGE(TAG, "MPU9250 read failed: %s", esp_err_to_name(ret));
         }
 
-        vTaskDelay(pdMS_TO_TICKS(10)); // 100Hz 속도 (10ms)
+        vTaskDelay(pdMS_TO_TICKS(500)); // 100Hz 속도 (10ms)
     }
 }

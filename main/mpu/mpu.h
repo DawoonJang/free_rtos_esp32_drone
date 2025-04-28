@@ -19,11 +19,9 @@
 #define MPU9250_REG_ACCEL  0x3B
 
 #define CALIBRATE_CNT  1000
-
-const float RADIANS_TO_DEGREES = 180.0f / 3.14159f;
-const float GYROXYZ_TO_DEGREES_PER_SEC = 131.0f;
-const double ALPHA = 0.96;
-
+#define RADIANS_TO_DEGREES (180.0f / 3.14159f)
+#define GYROXYZ_TO_DEGREES_PER_SEC (131.0f)
+#define ALPHA (0.96)
 
 typedef struct
 {
@@ -44,7 +42,6 @@ typedef struct
     double complemented_angle_x, complemented_angle_y, complemented_angle_z;
     double calidbrated_gyro_x, calidbrated_gyro_y, calidbrated_gyro_z;
     double delta_t;
-
 } mpu9250_data_t;
 
 
@@ -52,7 +49,7 @@ esp_err_t init_i2c_master(void);
 
 esp_err_t mpu9250_init(void);
 
-esp_err_t mpu9250_read(mpu9250_data_t *data);
+esp_err_t mpu9250_read(void);
 
 void mpu9250_task(void *pvParameters);
 
