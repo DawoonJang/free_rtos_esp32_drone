@@ -166,13 +166,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="mpu setup">
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="fix build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/motor/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/motor/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,9 +240,9 @@
   }
 }</component>
   <component name="RunManager" selected="Shell Script.flash_monitor">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
@@ -1067,7 +1063,8 @@
       <workItem from="1745632111961" duration="3335000" />
       <workItem from="1745636031141" duration="3841000" />
       <workItem from="1745757729588" duration="1927000" />
-      <workItem from="1745759671328" duration="8289000" />
+      <workItem from="1745759671328" duration="13193000" />
+      <workItem from="1746197709378" duration="4435000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1077,7 +1074,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745639876156</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add pid control and sensor calibrated">
+      <option name="closed" value="true" />
+      <created>1745770558825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745770558825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix delta time">
+      <option name="closed" value="true" />
+      <created>1745770596223</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745770596223</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1745844131368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745844131368</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1090,7 +1111,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mpu setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="mpu setup" />
+    <MESSAGE value="add pid control and sensor calibrated" />
+    <MESSAGE value="fix delta time" />
+    <MESSAGE value="fix build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
