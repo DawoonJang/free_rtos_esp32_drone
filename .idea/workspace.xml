@@ -166,9 +166,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="fix build">
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,11 +241,6 @@
   }
 }</component>
   <component name="RunManager" selected="Shell Script.flash_monitor">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -1064,7 +1060,9 @@
       <workItem from="1745636031141" duration="3841000" />
       <workItem from="1745757729588" duration="1927000" />
       <workItem from="1745759671328" duration="13193000" />
-      <workItem from="1746197709378" duration="4435000" />
+      <workItem from="1746197709378" duration="4841000" />
+      <workItem from="1746244184309" duration="601000" />
+      <workItem from="1746246352017" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1098,7 +1096,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745844131368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1746202445250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746202445250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1114,7 +1120,8 @@
     <MESSAGE value="add pid control and sensor calibrated" />
     <MESSAGE value="fix delta time" />
     <MESSAGE value="fix build" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

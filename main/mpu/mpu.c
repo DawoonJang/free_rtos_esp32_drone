@@ -188,17 +188,14 @@ void mpu9250_task(void *pvParameters)
             sensor_mpu9250_data.delta_t = (double) (t_now - t_prev) / 1000000.0; // 초 단위
             t_prev = t_now;
 
-            // 자이로 보정
             sensor_mpu9250_data.calidbrated_gyro_x = (float) sensor_mpu9250_data.gyro_x / GYROXYZ_TO_DEGREES_PER_SEC;
             sensor_mpu9250_data.calidbrated_gyro_y = (float) sensor_mpu9250_data.gyro_y / GYROXYZ_TO_DEGREES_PER_SEC;
             sensor_mpu9250_data.calidbrated_gyro_z = (float) sensor_mpu9250_data.gyro_z / GYROXYZ_TO_DEGREES_PER_SEC;
 
-            // 자이로 적분 (필요 시)
             gyAngleX += sensor_mpu9250_data.calidbrated_gyro_x * sensor_mpu9250_data.delta_t;
             gyAngleY += sensor_mpu9250_data.calidbrated_gyro_y * sensor_mpu9250_data.delta_t;
             gyAngleZ += sensor_mpu9250_data.calidbrated_gyro_z * sensor_mpu9250_data.delta_t;
 
-            // 가속도기 기반 각도
             const double AcYZD = sqrt(pow(sensor_mpu9250_data.acc_y, 2) + pow(sensor_mpu9250_data.acc_z, 2));
             const double AcXZD = sqrt(pow(sensor_mpu9250_data.acc_x, 2) + pow(sensor_mpu9250_data.acc_z, 2));
 
