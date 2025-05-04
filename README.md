@@ -2,53 +2,60 @@
 
 # FreeRTOS ESP32 Drone Project
 
-## Sensor
+## MPU9250 Sensor
 
-### MPU9250 Sensor Calibration
+### 1. Offset Calibration
 
 To minimize sensor noise and correct inherent bias, an initial calibration routine is executed at startup. During this
 process, the system collects **1,000 samples** of raw accelerometer and gyroscope data. The mean of each axis is
 computed and treated as the sensor's offset:
 
 ```
-acc_offset  = (∑ₜ₌₀⁹⁹⁹ acc_t)  / N
-gyro_offset = (∑ₜ₌₀⁹⁹⁹ gyro_t) / N
+acc_offset  = (∑ₜ₌₀⁹⁹⁹ accₜ)  / N  
+gyro_offset = (∑ₜ₌₀⁹⁹⁹ gyroₜ) / N  
 
-Once `t ≥ 1000`, raw sensor data is calibrated as follows:
-calibrated_acc_t  = acc_t  - acc_offset
-calibrated_gyro_t = gyro_t - gyro_offset
+Once t ≥ 1000, raw sensor data is calibrated as follows:  
+calibrated_accₜ  = accₜ  - acc_offset  
+calibrated_gyroₜ = gyroₜ - gyro_offset
 ```
-
-These offsets are subtracted from all subsequent readings to ensure the data reflects true motion rather than static
-bias or noise.
-
-#### Purpose of Calibration
-
-- Averages out short-term fluctuations to **reduce sensor noise**
-- Compensates for **bias in both accelerometer and gyroscope**
-- Improves the **accuracy of orientation estimation** in filtering algorithms such as the Complementary Filter
-
-#### Implementation Highlights
-
-- Samples are collected **once at startup**
-- Assumes the sensor is **stationary and level** during this period
-- Calculated offsets are stored and used to **correct all future sensor data in real time**
 
 ---
 
-### Complementary Filter
+#### 2. Gyroscope Data → Angle Calculation
 
-To estimate stable orientation angles (pitch and roll) using the MPU9250, a **Complementary Filter** is used. This
-filter fuses gyroscope and accelerometer data, leveraging the strengths of each.
-
-Filtered angles are calculated as:
+The gyroscope provides **angular velocity (°/s)**, which can be integrated to obtain **angular displacement (°)**. The
+code accumulates the angular velocity over time to estimate the angles of the device:
 
 ```
-θₓ(t) = α × [θₓ(t - 1) + gyroₓ × Δt] + (1 - α) × θ_accₓ
-θᵧ(t) = α × [θᵧ(t - 1) + gyroᵧ × Δt] + (1 - α) × θ_accᵧ
+gyAngleₓ += gyroₓ * Δt;
+gyAngleᵧ += gyroᵧ * Δt
+gyAngle𝓏 += gyro𝓏 * Δt
 ```
 
-#### Variables
+However, a limitation of gyroscopes is that they suffer from **drift** over time, causing the calculated angles to
+accumulate small errors as time progresses.
+
+#### 3. Accelerometer Data → Angle Estimation
+
+The accelerometer can be used to estimate **orientation angles** by referencing the **gravity vector**. The code
+calculates **pitch (X-axis)** and **roll (Y-axis)** based on accelerometer data:
+
+```
+acAngleY = atan(-acc_x / sqrt(acc_y² + acc_z²)) * 180/π;
+acAngleX = atan(acc_y / sqrt(acc_x² + acc_z²)) * 180/π;
+```
+
+The downside of the accelerometer is that it is **noisy**, especially during quick movements or vibrations, leading to
+inaccurate angle estimations when the sensor is in motion.
+
+---
+
+#### 4. Complementary Filter: Combining Both Sensors’ Strengths
+
+- The **gyroscope** offers **smooth and responsive** data but suffers from **long-term drift**.
+- The **accelerometer** provides an **absolute reference** (gravity) but can be **noisy** and slow to react.
+
+The **complementary filter** is used to combine the benefits of both sensors:
 
 - `θₓ(t), θᵧ(t)`: Filtered roll and pitch angles (degrees)
 - `θₓ(t - 1), θᵧ(t - 1)`: Previous filtered angles
@@ -57,34 +64,18 @@ Filtered angles are calculated as:
 - `θ_accₓ, θ_accᵧ`: Angle estimated from the accelerometer (degrees)
 - `α`: Filter coefficient (range: 0 < α < 1; typically 0.95–0.98)
 
-#### How It Works
-
-- The **gyroscope** provides smooth and responsive angular rate data, but accumulates **drift over time**
-- The **accelerometer** is noisy but provides an **absolute reference to gravity**
-- The **Complementary Filter** blends both:
-    - **Gyro data** is integrated for responsiveness
-    - **Accel data** corrects for long-term drift
-
-#### Common α Values
-
 | α Value | Behavior Description                                              |
 |--------:|-------------------------------------------------------------------|
 |    0.98 | High reliance on gyro (smooth output, more drift)                 |
 |    0.95 | Balanced fusion (commonly used)                                   |
 |    0.90 | More responsive to tilt (faster correction, more accel influence) |
 
-### How it works
+```
+θₓ₍ₜ₎ = α × (θₓ₍ₜ₋₁₎ + gyroₓ × Δt) + (1 - α) × θ_accₓ
+θᵧ₍ₜ₎ = α × [θᵧ₍ₜ₋₁₎ + gyroᵧ × Δt] + (1 − α) × θ_accᵧ
+```
 
-- The **gyroscope** provides fast and responsive angular rate data, but it **drifts** over time.
-- The **accelerometer** is noisy but gives an **absolute reference** to gravity.
-- The **complementary filter** blends both:
-    - It integrates gyro data for responsiveness
-    - It corrects drift using accelerometer data
+This filter blends the **gyro data** (for fast response) with the **accelerometer data** (for long-term stability),
+helping to correct drift over time while preserving real-time responsiveness.
 
-### Example α values
-
-| α Value | Description                                                     |
-|--------:|-----------------------------------------------------------------|
-|    0.98 | Heavier reliance on gyroscope (smoother, but more drift)        |
-|    0.95 | Common setting, balances both sources                           |
-|    0.90 | Faster correction using accelerometer (more responsive to tilt) |
+As a result, `sensor_mpu9250_data.complemented_angle_x` provides **a more accurate and stable angle** estimate.
