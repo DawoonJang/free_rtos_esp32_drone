@@ -1,7 +1,5 @@
 # FreeRTOS EPS32 Drone Project
 
-# FreeRTOS ESP32 Drone Project
-
 ## MPU9250 Sensor
 
 ### 1. Offset Calibration
