@@ -25,22 +25,21 @@
 
 typedef struct
 {
-    // --- 센서값 읽어서 자세각 계산 ---
-    int16_t acc_x, acc_y, acc_z;
-    int16_t gyro_x, gyro_y, gyro_z;
-    float temp;
+    int16_t acc_x,              acc_y,              acc_z;
+    int16_t angular_velocity_x, angular_velocity_y, angular_velocity_z; // gyro sensor
+    float   temp;
 
-    int32_t acc_x_sum, acc_y_sum, acc_z_sum;
-    int32_t gyro_x_sum, gyro_y_sum, gyro_z_sum;
+    int32_t acc_x_sum,              acc_y_sum,              acc_z_sum;
+    int32_t angular_velocity_x_sum, angular_velocity_y_sum, angular_velocity_z_sum;
 
-    double acc_x_offset, acc_y_offset, acc_z_offset;
-    double gyro_x_offset, gyro_y_offset, gyro_z_offset;
+    double acc_x_offset,  acc_y_offset,  acc_z_offset;
+    double angular_velocity_x_offset, angular_velocity_y_offset, angular_velocity_z_offset;
 
-    bool is_calibrated;
+    bool    is_calibrated;
     int16_t cnt_calibrated;
 
     double complemented_angle_x, complemented_angle_y, complemented_angle_z;
-    double calidbrated_gyro_x, calidbrated_gyro_y, calidbrated_gyro_z;
+    double calidbrated_angular_velocity_x,   calidbrated_angular_velocity_y,   calidbrated_angular_velocity_z;
     double delta_t;
 } mpu9250_data_t;
 

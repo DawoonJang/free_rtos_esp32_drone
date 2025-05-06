@@ -81,14 +81,14 @@ static esp_err_t s_mpu9250_read_raw(void)
     if (ret != ESP_OK)
         return ret;
 
-    sensor_mpu9250_data.acc_x = combine_two_bytes(raw_data[0], raw_data[1]);
-    sensor_mpu9250_data.acc_y = combine_two_bytes(raw_data[2], raw_data[3]);
-    sensor_mpu9250_data.acc_z = combine_two_bytes(raw_data[4], raw_data[5]);
-    sensor_mpu9250_data.temp = combine_two_bytes(raw_data[6], raw_data[7]);
-    sensor_mpu9250_data.gyro_x = combine_two_bytes(raw_data[8], raw_data[9]);
-    sensor_mpu9250_data.gyro_y = combine_two_bytes(raw_data[10], raw_data[11]);
-    sensor_mpu9250_data.gyro_z = combine_two_bytes(raw_data[12], raw_data[13]);
-    sensor_mpu9250_data.temp = (sensor_mpu9250_data.temp / 340.0f) + 36.53f;
+    sensor_mpu9250_data.acc_x              = combine_two_bytes(raw_data[0], raw_data[1]);
+    sensor_mpu9250_data.acc_y              = combine_two_bytes(raw_data[2], raw_data[3]);
+    sensor_mpu9250_data.acc_z              = combine_two_bytes(raw_data[4], raw_data[5]);
+    sensor_mpu9250_data.temp               = combine_two_bytes(raw_data[6], raw_data[7]);
+    sensor_mpu9250_data.angular_velocity_x = combine_two_bytes(raw_data[8], raw_data[9]);
+    sensor_mpu9250_data.angular_velocity_y = combine_two_bytes(raw_data[10], raw_data[11]);
+    sensor_mpu9250_data.angular_velocity_z = combine_two_bytes(raw_data[12], raw_data[13]);
+    sensor_mpu9250_data.temp               = (sensor_mpu9250_data.temp / 340.0f) + 36.53f;
 
     return ESP_OK;
 }
@@ -97,7 +97,7 @@ esp_err_t mpu9250_calibrate(void)
 {
     if (sensor_mpu9250_data.cnt_calibrated <= CALIBRATE_CNT)
     {
-        esp_err_t ret = s_mpu9250_read_raw();
+        const esp_err_t ret = s_mpu9250_read_raw();
 
         if (ret != ESP_OK)
             return ret;
@@ -106,9 +106,9 @@ esp_err_t mpu9250_calibrate(void)
         sensor_mpu9250_data.acc_y_sum += sensor_mpu9250_data.acc_y;
         sensor_mpu9250_data.acc_z_sum += sensor_mpu9250_data.acc_z;
 
-        sensor_mpu9250_data.gyro_x_sum += sensor_mpu9250_data.gyro_x;
-        sensor_mpu9250_data.gyro_y_sum += sensor_mpu9250_data.gyro_y;
-        sensor_mpu9250_data.gyro_z_sum += sensor_mpu9250_data.gyro_z;
+        sensor_mpu9250_data.angular_velocity_x_sum += sensor_mpu9250_data.angular_velocity_x;
+        sensor_mpu9250_data.angular_velocity_y_sum += sensor_mpu9250_data.angular_velocity_y;
+        sensor_mpu9250_data.angular_velocity_z_sum += sensor_mpu9250_data.angular_velocity_z;
 
         sensor_mpu9250_data.cnt_calibrated++;
 
@@ -118,9 +118,12 @@ esp_err_t mpu9250_calibrate(void)
             sensor_mpu9250_data.acc_y_offset = (double) sensor_mpu9250_data.acc_y_sum / CALIBRATE_CNT;
             sensor_mpu9250_data.acc_z_offset = (double) sensor_mpu9250_data.acc_z_sum / CALIBRATE_CNT;
 
-            sensor_mpu9250_data.gyro_x_offset = (double) sensor_mpu9250_data.gyro_x_sum / CALIBRATE_CNT;
-            sensor_mpu9250_data.gyro_y_offset = (double) sensor_mpu9250_data.gyro_y_sum / CALIBRATE_CNT;
-            sensor_mpu9250_data.gyro_z_offset = (double) sensor_mpu9250_data.gyro_z_sum / CALIBRATE_CNT;
+            sensor_mpu9250_data.angular_velocity_x_offset =
+                    (double) sensor_mpu9250_data.angular_velocity_x_sum / CALIBRATE_CNT;
+            sensor_mpu9250_data.angular_velocity_y_offset =
+                    (double) sensor_mpu9250_data.angular_velocity_y_sum / CALIBRATE_CNT;
+            sensor_mpu9250_data.angular_velocity_z_offset =
+                    (double) sensor_mpu9250_data.angular_velocity_z_sum / CALIBRATE_CNT;
 
             sensor_mpu9250_data.is_calibrated = 1;
         }
@@ -150,9 +153,9 @@ esp_err_t mpu9250_read(void)
     sensor_mpu9250_data.acc_y -= (int16_t) sensor_mpu9250_data.acc_y_offset;
     sensor_mpu9250_data.acc_z -= (int16_t) sensor_mpu9250_data.acc_z_offset;
 
-    sensor_mpu9250_data.gyro_x -= (int16_t) sensor_mpu9250_data.gyro_x_offset;
-    sensor_mpu9250_data.gyro_y -= (int16_t) sensor_mpu9250_data.gyro_y_offset;
-    sensor_mpu9250_data.gyro_z -= (int16_t) sensor_mpu9250_data.gyro_z_offset;
+    sensor_mpu9250_data.angular_velocity_x -= (int16_t) sensor_mpu9250_data.angular_velocity_x_offset;
+    sensor_mpu9250_data.angular_velocity_y -= (int16_t) sensor_mpu9250_data.angular_velocity_y_offset;
+    sensor_mpu9250_data.angular_velocity_z -= (int16_t) sensor_mpu9250_data.angular_velocity_z_offset;
 
     return ESP_OK;
 }
@@ -160,7 +163,7 @@ esp_err_t mpu9250_read(void)
 void mpu9250_task(void *pvParameters)
 {
     static int64_t t_prev;
-    static double gyAngleX, gyAngleY, gyAngleZ;
+    static double  angle_x, angle_y, angle_z;
 
 
     while (!sensor_mpu9250_data.is_calibrated)
@@ -184,17 +187,20 @@ void mpu9250_task(void *pvParameters)
 
         if (ret == ESP_OK)
         {
-            const int64_t t_now = esp_timer_get_time(); // 마이크로초
+            const int64_t t_now         = esp_timer_get_time();                  // 마이크로초
             sensor_mpu9250_data.delta_t = (double) (t_now - t_prev) / 1000000.0; // 초 단위
-            t_prev = t_now;
+            t_prev                      = t_now;
 
-            sensor_mpu9250_data.calidbrated_gyro_x = (float) sensor_mpu9250_data.gyro_x / GYROXYZ_TO_DEGREES_PER_SEC;
-            sensor_mpu9250_data.calidbrated_gyro_y = (float) sensor_mpu9250_data.gyro_y / GYROXYZ_TO_DEGREES_PER_SEC;
-            sensor_mpu9250_data.calidbrated_gyro_z = (float) sensor_mpu9250_data.gyro_z / GYROXYZ_TO_DEGREES_PER_SEC;
+            sensor_mpu9250_data.calidbrated_angular_velocity_x =
+                    (float) sensor_mpu9250_data.angular_velocity_x / GYROXYZ_TO_DEGREES_PER_SEC;
+            sensor_mpu9250_data.calidbrated_angular_velocity_y =
+                    (float) sensor_mpu9250_data.angular_velocity_y / GYROXYZ_TO_DEGREES_PER_SEC;
+            sensor_mpu9250_data.calidbrated_angular_velocity_z =
+                    (float) sensor_mpu9250_data.angular_velocity_z / GYROXYZ_TO_DEGREES_PER_SEC;
 
-            gyAngleX += sensor_mpu9250_data.calidbrated_gyro_x * sensor_mpu9250_data.delta_t;
-            gyAngleY += sensor_mpu9250_data.calidbrated_gyro_y * sensor_mpu9250_data.delta_t;
-            gyAngleZ += sensor_mpu9250_data.calidbrated_gyro_z * sensor_mpu9250_data.delta_t;
+            angle_x += sensor_mpu9250_data.calidbrated_angular_velocity_x * sensor_mpu9250_data.delta_t;
+            angle_y += sensor_mpu9250_data.calidbrated_angular_velocity_y * sensor_mpu9250_data.delta_t;
+            angle_z += sensor_mpu9250_data.calidbrated_angular_velocity_z * sensor_mpu9250_data.delta_t;
 
             const double AcYZD = sqrt(pow(sensor_mpu9250_data.acc_y, 2) + pow(sensor_mpu9250_data.acc_z, 2));
             const double AcXZD = sqrt(pow(sensor_mpu9250_data.acc_x, 2) + pow(sensor_mpu9250_data.acc_z, 2));
@@ -205,14 +211,16 @@ void mpu9250_task(void *pvParameters)
 
             // Complementary Filter
             sensor_mpu9250_data.complemented_angle_x =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.calidbrated_gyro_x *
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.
+                             calidbrated_angular_velocity_x *
                              sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleX;
             sensor_mpu9250_data.complemented_angle_y =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.calidbrated_gyro_y *
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.
+                             calidbrated_angular_velocity_y *
                              sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleY;
-            sensor_mpu9250_data.complemented_angle_z = gyAngleZ;
+            sensor_mpu9250_data.complemented_angle_z = angle_z;
 
             // SET LOG
             ESP_LOGI(TAG,
@@ -220,9 +228,9 @@ void mpu9250_task(void *pvParameters)
                      sensor_mpu9250_data.acc_x,
                      sensor_mpu9250_data.acc_y,
                      sensor_mpu9250_data.acc_z,
-                     sensor_mpu9250_data.gyro_x,
-                     sensor_mpu9250_data.gyro_y,
-                     sensor_mpu9250_data.gyro_z,
+                     sensor_mpu9250_data.angular_velocity_x,
+                     sensor_mpu9250_data.angular_velocity_y,
+                     sensor_mpu9250_data.angular_velocity_z,
                      sensor_mpu9250_data.complemented_angle_x,
                      sensor_mpu9250_data.complemented_angle_y,
                      sensor_mpu9250_data.complemented_angle_z

@@ -10,24 +10,24 @@ computed and treated as the sensor's offset:
 
 ```
 acc_offset  = (∑ₜ₌₀⁹⁹⁹ accₜ)  / N  
-gyro_offset = (∑ₜ₌₀⁹⁹⁹ gyroₜ) / N  
+angular_velocity_offset = (∑ₜ₌₀⁹⁹⁹ angular_velocityₜ) / N  
 
 Once t ≥ 1000, raw sensor data is calibrated as follows:  
 calibrated_accₜ  = accₜ  - acc_offset  
-calibrated_gyroₜ = gyroₜ - gyro_offset
+calibrated_angular_velocityₜ = angular_velocityₜ - angular_velocity_offset
 ```
 
 ---
 
 #### 2. Gyroscope Data → Angle Calculation
 
-The gyroscope provides **angular velocity (°/s)**, which can be integrated to obtain **angular displacement (°)**. The
-code accumulates the angular velocity over time to estimate the angles of the device:
+The gyroscope provides angular velocity (°/s), which represents how fast the device is rotating.
+Since angular velocity is the rate of change of angle over time, integrating it yields the angular displacement (°).
 
 ```
-gyAngleₓ += gyroₓ * Δt;
-gyAngleᵧ += gyroᵧ * Δt
-gyAngle𝓏 += gyro𝓏 * Δt
+angleₓ += angular_velocityₓ * Δt
+angleᵧ += angular_velocityᵧ * Δt
+angle𝓏 += angular_velocity𝓏 * Δt
 ```
 
 However, a limitation of gyroscopes is that they suffer from **drift** over time, causing the calculated angles to

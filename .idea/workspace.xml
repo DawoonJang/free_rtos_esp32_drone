@@ -239,11 +239,6 @@
   }
 }</component>
   <component name="RunManager" selected="Shell Script.flash_monitor">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -915,33 +910,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake 애플리케이션.bootloader" />
-      <item itemvalue="CMake 애플리케이션.efuse-common-table" />
-      <item itemvalue="CMake 애플리케이션.efuse-custom-table" />
-      <item itemvalue="CMake 애플리케이션.efuse_test_table" />
-      <item itemvalue="CMake 애플리케이션.show-efuse-table" />
-      <item itemvalue="CMake 애플리케이션.memory.ld" />
-      <item itemvalue="CMake 애플리케이션.sections.ld.in" />
-      <item itemvalue="CMake 애플리케이션.app" />
-      <item itemvalue="CMake 애플리케이션.app-flash" />
-      <item itemvalue="CMake 애플리케이션.bootloader-flash" />
-      <item itemvalue="CMake 애플리케이션.erase_flash" />
-      <item itemvalue="CMake 애플리케이션.flash" />
-      <item itemvalue="CMake 애플리케이션.gen_project_binary" />
-      <item itemvalue="CMake 애플리케이션.merge-bin" />
-      <item itemvalue="CMake 애플리케이션.monitor" />
-      <item itemvalue="CMake 애플리케이션.partition-table-flash" />
-      <item itemvalue="CMake 애플리케이션.custom_bundle" />
-      <item itemvalue="CMake 애플리케이션.apidoc" />
-      <item itemvalue="CMake 애플리케이션.everest" />
-      <item itemvalue="CMake 애플리케이션.p256m" />
-      <item itemvalue="CMake 애플리케이션.lib" />
-      <item itemvalue="CMake 애플리케이션.mbedcrypto" />
-      <item itemvalue="CMake 애플리케이션.mbedtls" />
-      <item itemvalue="CMake 애플리케이션.mbedx509" />
-      <item itemvalue="CMake 애플리케이션.partition-table" />
-      <item itemvalue="CMake 애플리케이션.partition_table_bin" />
-      <item itemvalue="CMake 애플리케이션.app_check_size" />
       <item itemvalue="CMake 애플리케이션.__idf_app_trace" />
       <item itemvalue="CMake 애플리케이션.__idf_app_update" />
       <item itemvalue="CMake 애플리케이션.__idf_bootloader_support" />
@@ -1026,26 +994,53 @@
       <item itemvalue="CMake 애플리케이션.__idf_wifi_provisioning" />
       <item itemvalue="CMake 애플리케이션.__idf_wpa_supplicant" />
       <item itemvalue="CMake 애플리케이션.__idf_xtensa" />
-      <item itemvalue="CMake 애플리케이션.confserver" />
-      <item itemvalue="CMake 애플리케이션.menuconfig" />
-      <item itemvalue="CMake 애플리케이션.save-defconfig" />
       <item itemvalue="CMake 애플리케이션.__ldgen_output_sections.ld" />
       <item itemvalue="CMake 애플리케이션._project_elf_src" />
-      <item itemvalue="CMake 애플리케이션.esp.elf" />
-      <item itemvalue="CMake 애플리케이션.size" />
-      <item itemvalue="CMake 애플리케이션.size-components" />
-      <item itemvalue="CMake 애플리케이션.size-files" />
-      <item itemvalue="CMake 애플리케이션.uf2" />
-      <item itemvalue="CMake 애플리케이션.uf2-app" />
+      <item itemvalue="CMake 애플리케이션.apidoc" />
+      <item itemvalue="CMake 애플리케이션.app-flash" />
+      <item itemvalue="CMake 애플리케이션.app" />
+      <item itemvalue="CMake 애플리케이션.app_check_size" />
+      <item itemvalue="CMake 애플리케이션.bootloader-flash" />
+      <item itemvalue="CMake 애플리케이션.bootloader" />
+      <item itemvalue="CMake 애플리케이션.confserver" />
+      <item itemvalue="CMake 애플리케이션.custom_bundle" />
+      <item itemvalue="CMake 애플리케이션.efuse-common-table" />
+      <item itemvalue="CMake 애플리케이션.efuse-custom-table" />
       <item itemvalue="CMake 애플리케이션.efuse_common_table" />
       <item itemvalue="CMake 애플리케이션.efuse_custom_table" />
+      <item itemvalue="CMake 애플리케이션.efuse_test_table" />
       <item itemvalue="CMake 애플리케이션.encrypted-app-flash" />
       <item itemvalue="CMake 애플리케이션.encrypted-bootloader-flash" />
       <item itemvalue="CMake 애플리케이션.encrypted-flash" />
       <item itemvalue="CMake 애플리케이션.encrypted-partition-table-flash" />
-      <item itemvalue="CMake 애플리케이션.partition_table" />
+      <item itemvalue="CMake 애플리케이션.erase_flash" />
+      <item itemvalue="CMake 애플리케이션.esp.elf" />
+      <item itemvalue="CMake 애플리케이션.everest" />
+      <item itemvalue="CMake 애플리케이션.flash" />
+      <item itemvalue="CMake 애플리케이션.gen_project_binary" />
+      <item itemvalue="CMake 애플리케이션.lib" />
+      <item itemvalue="CMake 애플리케이션.mbedcrypto" />
+      <item itemvalue="CMake 애플리케이션.mbedtls" />
+      <item itemvalue="CMake 애플리케이션.mbedx509" />
+      <item itemvalue="CMake 애플리케이션.memory.ld" />
+      <item itemvalue="CMake 애플리케이션.menuconfig" />
+      <item itemvalue="CMake 애플리케이션.merge-bin" />
+      <item itemvalue="CMake 애플리케이션.monitor" />
+      <item itemvalue="CMake 애플리케이션.p256m" />
+      <item itemvalue="CMake 애플리케이션.partition-table-flash" />
+      <item itemvalue="CMake 애플리케이션.partition-table" />
       <item itemvalue="CMake 애플리케이션.partition_table-flash" />
+      <item itemvalue="CMake 애플리케이션.partition_table" />
+      <item itemvalue="CMake 애플리케이션.partition_table_bin" />
+      <item itemvalue="CMake 애플리케이션.save-defconfig" />
+      <item itemvalue="CMake 애플리케이션.sections.ld.in" />
+      <item itemvalue="CMake 애플리케이션.show-efuse-table" />
       <item itemvalue="CMake 애플리케이션.show_efuse_table" />
+      <item itemvalue="CMake 애플리케이션.size-components" />
+      <item itemvalue="CMake 애플리케이션.size-files" />
+      <item itemvalue="CMake 애플리케이션.size" />
+      <item itemvalue="CMake 애플리케이션.uf2-app" />
+      <item itemvalue="CMake 애플리케이션.uf2" />
       <item itemvalue="Shell Script.flash_monitor" />
     </list>
   </component>
@@ -1067,6 +1062,10 @@
       <workItem from="1746244184309" duration="601000" />
       <workItem from="1746246352017" duration="1646000" />
       <workItem from="1746337000984" duration="609000" />
+      <workItem from="1746338915072" duration="921000" />
+      <workItem from="1746451478539" duration="605000" />
+      <workItem from="1746516728111" duration="58000" />
+      <workItem from="1746516795123" duration="1294000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1116,7 +1115,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746247992160</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1746339818328</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746339818328</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1746339830317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746339830317</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

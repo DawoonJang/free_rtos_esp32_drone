@@ -105,9 +105,9 @@ void motor_task(void *pvParameters)
         const double eAngleY = tAngleY - p_mpu9250_data->complemented_angle_y;
         const double eAngleZ = tAngleZ - p_mpu9250_data->complemented_angle_z;
 
-        double BalX = Kp * eAngleX + Kd * -p_mpu9250_data->calidbrated_gyro_x;
-        double BalY = Kp * eAngleY + Kd * -p_mpu9250_data->calidbrated_gyro_y;
-        double BalZ = Kp * eAngleZ + Kd * -p_mpu9250_data->calidbrated_gyro_z;
+        double BalX = Kp * eAngleX + Kd * -p_mpu9250_data->calidbrated_angular_velocity_x;
+        double BalY = Kp * eAngleY + Kd * -p_mpu9250_data->calidbrated_angular_velocity_y;
+        double BalZ = Kp * eAngleZ + Kd * -p_mpu9250_data->calidbrated_angular_velocity_z;
 
         if (throttle == 0)
         {
