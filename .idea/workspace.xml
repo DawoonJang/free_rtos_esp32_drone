@@ -8,6 +8,7 @@
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
+    <option name="/Default/Housekeeping/RefactoringsMru/RenameRefactoring/DoSearchForTextInStrings/@EntryValue" value="true" type="bool" />
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -166,8 +167,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="update readme">
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="update readme and trim code">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1066,6 +1069,8 @@
       <workItem from="1746451478539" duration="605000" />
       <workItem from="1746516728111" duration="58000" />
       <workItem from="1746516795123" duration="1294000" />
+      <workItem from="1746528716965" duration="2832000" />
+      <workItem from="1746710112820" duration="1341000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1131,7 +1136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746339830317</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update readme and trim code">
+      <option name="closed" value="true" />
+      <created>1746532516134</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746532516134</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1148,7 +1161,8 @@
     <MESSAGE value="fix delta time" />
     <MESSAGE value="fix build" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="update readme and trim code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme and trim code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

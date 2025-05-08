@@ -33,47 +33,54 @@ angle𝓏 += angular_velocity𝓏 * Δt
 However, a limitation of gyroscopes is that they suffer from **drift** over time, causing the calculated angles to
 accumulate small errors as time progresses.
 
-#### 3. Accelerometer Data → Angle Estimation
+#### 3. Accelerometer Data → Angle Calculation
 
-The accelerometer can be used to estimate **orientation angles** by referencing the **gravity vector**. The code
-calculates **pitch (X-axis)** and **roll (Y-axis)** based on accelerometer data:
+The accelerometer measures acceleration along each axis, including the force of gravity.
+By referencing the gravity vector, it is possible to estimate the device’s orientation in space.
+
+Specifically, the accelerometer can be used to estimate pitch (rotation around X-axis) and
+roll (rotation around Y-axis) using trigonometric calculations:
 
 ```
-acAngleY = atan(-acc_x / sqrt(acc_y² + acc_z²)) * 180/π;
-acAngleX = atan(acc_y / sqrt(acc_x² + acc_z²)) * 180/π;
+angleₓ = atan2(accᵧ, √(accₓ² + acc𝓏²)) × 180 / π  
+angleᵧ = atan2(−accₓ, √(accᵧ² + acc𝓏²)) × 180 / π
 ```
 
-The downside of the accelerometer is that it is **noisy**, especially during quick movements or vibrations, leading to
-inaccurate angle estimations when the sensor is in motion.
+However, estimating yaw (rotation around Z-axis) is not possible using only the accelerometer,
+since gravity acts vertically and does not change with horizontal (Z-axis) rotation.
+While accelerometer-based angles provide an absolute reference, they are also susceptible to noise
+during movement or vibration, which can lead to unstable readings when the device is not stationary.
 
 ---
 
-#### 4. Complementary Filter: Combining Both Sensors’ Strengths
+#### 4. Complementary Filter → Angle Fusion
 
-- The **gyroscope** offers **smooth and responsive** data but suffers from **long-term drift**.
-- The **accelerometer** provides an **absolute reference** (gravity) but can be **noisy** and slow to react.
+The gyroscope provides smooth and responsive angular velocity readings,
+but suffers from long-term drift due to error accumulation over time.
 
-The **complementary filter** is used to combine the benefits of both sensors:
+The accelerometer offers an absolute angle reference based on gravity,
+but is often noisy and unreliable during movement or vibration.
 
-- `θₓ(t), θᵧ(t)`: Filtered roll and pitch angles (degrees)
-- `θₓ(t - 1), θᵧ(t - 1)`: Previous filtered angles
-- `gyroₓ, gyroᵧ`: Angular velocity from the gyroscope (°/s)
-- `Δt`: Time elapsed since the last update (seconds)
-- `θ_accₓ, θ_accᵧ`: Angle estimated from the accelerometer (degrees)
-- `α`: Filter coefficient (range: 0 < α < 1; typically 0.95–0.98)
-
-| α Value | Behavior Description                                              |
-|--------:|-------------------------------------------------------------------|
-|    0.98 | High reliance on gyro (smooth output, more drift)                 |
-|    0.95 | Balanced fusion (commonly used)                                   |
-|    0.90 | More responsive to tilt (faster correction, more accel influence) |
+To combine the strengths of both sensors, a complementary filter is used to estimate stable orientation:
 
 ```
-θₓ₍ₜ₎ = α × (θₓ₍ₜ₋₁₎ + gyroₓ × Δt) + (1 - α) × θ_accₓ
-θᵧ₍ₜ₎ = α × [θᵧ₍ₜ₋₁₎ + gyroᵧ × Δt] + (1 − α) × θ_accᵧ
+θₓ(t) = α × [θₓ(t−1) + ωₓ × Δt] + (1 − α) × θₐccₓ  
+θᵧ(t) = α × [θᵧ(t−1) + ωᵧ × Δt] + (1 − α) × θₐccᵧ
 ```
 
-This filter blends the **gyro data** (for fast response) with the **accelerometer data** (for long-term stability),
-helping to correct drift over time while preserving real-time responsiveness.
+Where:
 
-As a result, `sensor_mpu9250_data.complemented_angle_x` provides **a more accurate and stable angle** estimate.
+```
+• θₓ(t), θᵧ(t): Filtered roll and pitch angles (degrees)
+• ωₓ, ωᵧ: Angular velocity from gyroscope (°/s)
+• Δt: Time elapsed since last update (seconds)
+• θₐccₓ, θₐccᵧ: Angle from accelerometer (degrees)
+• α: Filter coefficient (0 < α < 1), controlling the fusion balance
+```
+
+This filter continuously blends the short-term precision of the gyroscope
+with the long-term stability of the accelerometer,
+resulting in accurate and drift-resistant angle estimates over time.
+
+For example, complemented_angleₓ and complemented_angleᵧ can be used
+for stable control feedback in embedded motion systems.
