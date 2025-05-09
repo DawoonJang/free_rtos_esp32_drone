@@ -187,7 +187,7 @@ void mpu9250_task(void *pvParameters)
 
         if (ret == ESP_OK)
         {
-            const int64_t t_now         = esp_timer_get_time();                  // 마이크로초
+            const int64_t t_now         = esp_timer_get_time();
             sensor_mpu9250_data.delta_t = (double) (t_now - t_prev) / 1000000.0; // 초 단위
             t_prev                      = t_now;
 

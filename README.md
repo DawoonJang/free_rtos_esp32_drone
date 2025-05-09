@@ -2,21 +2,39 @@
 
 ## MPU9250 Sensor
 
-### 1. Offset Calibration
+### 1. Sensor Calibration: Offset Correction & Unit Conversion
 
-To minimize sensor noise and correct inherent bias, an initial calibration routine is executed at startup. During this
-process, the system collects **1,000 samples** of raw accelerometer and gyroscope data. The mean of each axis is
-computed and treated as the sensor's offset:
+To minimize sensor bias and noise, a calibration routine is executed at system startup.
+This step is critical to ensure accurate orientation estimation, especially when integrating angular velocity.
+
+(1) Step 1: Offset Estimation (Bias Correction)
+
+The system collects 1,000 samples of raw accelerometer and gyroscope data while the device is stationary.
+It computes the average (mean) value of each axis and treats it as the offset:
 
 ```
-acc_offset  = (∑ₜ₌₀⁹⁹⁹ accₜ)  / N  
-angular_velocity_offset = (∑ₜ₌₀⁹⁹⁹ angular_velocityₜ) / N  
+acc_offsetₓ  = (∑ₜ₌₀⁹⁹⁹ accₓ₍ₜ₎) / N  
+gyro_offsetₓ = (∑ₜ₌₀⁹⁹⁹ angular_velocityₓ₍ₜ₎) / N  
 
-Once t ≥ 1000, raw sensor data is calibrated as follows:  
-calibrated_accₜ  = accₜ  - acc_offset  
-calibrated_angular_velocityₜ = angular_velocityₜ - angular_velocity_offset
+Then, incoming raw data is offset-corrected in real time:
+calibrated_accₓ  = raw_accₓ  − acc_offsetₓ  
+calibrated_ωₓ    = raw_ωₓ    − gyro_offsetₓ
+
+Repeat above process for Y, Z axes 
 ```
 
+This step removes static bias, which would otherwise accumulate as angle drift when integrating gyro values.
+
+(2)  Step 2: Unit Conversion (Raw → Degrees per Second)
+
+```
+calibrated_ωₓ = (float) calibrated_ωₓ / GYROXYZ_TO_DEGREES_PER_SEC  
+calibrated_ωᵧ = (float) calibrated_ωᵧ / GYROXYZ_TO_DEGREES_PER_SEC  
+calibrated_ω𝓏 = (float) calibrated_ω𝓏 / GYROXYZ_TO_DEGREES_PER_SEC
+```
+
+GYROXYZ_TO_DEGREES_PER_SEC is a scale factor defined by the gyroscope’s full-scale range
+(e.g., 131.0 for ±250°/s, 65.5 for ±500°/s)
 ---
 
 #### 2. Gyroscope Data → Angle Calculation
@@ -25,9 +43,11 @@ The gyroscope provides angular velocity (°/s), which represents how fast the de
 Since angular velocity is the rate of change of angle over time, integrating it yields the angular displacement (°).
 
 ```
+
 angleₓ += angular_velocityₓ * Δt
 angleᵧ += angular_velocityᵧ * Δt
 angle𝓏 += angular_velocity𝓏 * Δt
+
 ```
 
 However, a limitation of gyroscopes is that they suffer from **drift** over time, causing the calculated angles to
@@ -42,8 +62,10 @@ Specifically, the accelerometer can be used to estimate pitch (rotation around X
 roll (rotation around Y-axis) using trigonometric calculations:
 
 ```
+
 angleₓ = atan2(accᵧ, √(accₓ² + acc𝓏²)) × 180 / π  
 angleᵧ = atan2(−accₓ, √(accᵧ² + acc𝓏²)) × 180 / π
+
 ```
 
 However, estimating yaw (rotation around Z-axis) is not possible using only the accelerometer,
@@ -64,18 +86,22 @@ but is often noisy and unreliable during movement or vibration.
 To combine the strengths of both sensors, a complementary filter is used to estimate stable orientation:
 
 ```
+
 θₓ(t) = α × [θₓ(t−1) + ωₓ × Δt] + (1 − α) × θₐccₓ  
 θᵧ(t) = α × [θᵧ(t−1) + ωᵧ × Δt] + (1 − α) × θₐccᵧ
+
 ```
 
 Where:
 
 ```
+
 • θₓ(t), θᵧ(t): Filtered roll and pitch angles (degrees)
 • ωₓ, ωᵧ: Angular velocity from gyroscope (°/s)
 • Δt: Time elapsed since last update (seconds)
 • θₐccₓ, θₐccᵧ: Angle from accelerometer (degrees)
 • α: Filter coefficient (0 < α < 1), controlling the fusion balance
+
 ```
 
 This filter continuously blends the short-term precision of the gyroscope
