@@ -25,21 +25,15 @@
 
 typedef struct
 {
-    int16_t acc_x,              acc_y,              acc_z;
-    int16_t angular_velocity_x, angular_velocity_y, angular_velocity_z; // gyro sensor
+    int16_t acceleration_x_raw,     acceleration_y_raw,     acceleration_z_raw;
+    int16_t angular_velocity_x_raw, angular_velocity_y_raw, angular_velocity_z_raw; // gyro sensor
     float   temp;
 
-    int32_t acc_x_sum,              acc_y_sum,              acc_z_sum;
-    int32_t angular_velocity_x_sum, angular_velocity_y_sum, angular_velocity_z_sum;
-
-    double acc_x_offset,  acc_y_offset,  acc_z_offset;
+    double acc_x_offset,              acc_y_offset,              acc_z_offset;
     double angular_velocity_x_offset, angular_velocity_y_offset, angular_velocity_z_offset;
 
-    bool    is_calibrated;
-    int16_t cnt_calibrated;
-
-    double complemented_angle_x, complemented_angle_y, complemented_angle_z;
-    double calidbrated_angular_velocity_x,   calidbrated_angular_velocity_y,   calidbrated_angular_velocity_z;
+    double complemented_angle_x,           complemented_angle_y,           complemented_angle_z;
+    double calidbrated_angular_velocity_x, calidbrated_angular_velocity_y, calidbrated_angular_velocity_z;
     double delta_t;
 } mpu9250_data_t;
 
