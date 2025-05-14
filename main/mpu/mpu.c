@@ -142,7 +142,7 @@ mpu9250_data_t *get_mpu9250_data(void)
 
 esp_err_t mpu9250_read(void)
 {
-    if (!sensor_mpu9250_data.is_calibrated)
+    if (_mpu9250_calibrate() == ESP_FAIL)
     {
         return ESP_ERR_INVALID_STATE;
     }
@@ -174,6 +174,7 @@ void mpu9250_task(void *pvParameters)
     }
 
     t_prev = esp_timer_get_time();
+
     while (1)
     {
         const esp_err_t ret = mpu9250_read();
@@ -217,13 +218,10 @@ void mpu9250_task(void *pvParameters)
 
             // SET LOG
             ESP_LOGI(TAG,
-                     "ACC_RAW X:%d Y:%d Z:%d | GYRO_RAW X:%d Y:%d Z:%d | ANGLE X:%.2f Y:%.2f Z:%.2f",
-                     sensor_mpu9250_data.acceleration_x_raw,
-                     sensor_mpu9250_data.acceleration_y_raw,
-                     sensor_mpu9250_data.acceleration_z_raw,
-                     sensor_mpu9250_data.angular_velocity_x_raw,
-                     sensor_mpu9250_data.angular_velocity_y_raw,
-                     sensor_mpu9250_data.angular_velocity_z_raw,
+                     "angular_velocity X:%.2f Y:%.2f Z:%.2f | angke X:%.2f Y:%.2f Z:%.2f",
+                     sensor_mpu9250_data.calidbrated_angular_velocity_x,
+                     sensor_mpu9250_data.calidbrated_angular_velocity_y,
+                     sensor_mpu9250_data.calidbrated_angular_velocity_z,
                      sensor_mpu9250_data.complemented_angle_x,
                      sensor_mpu9250_data.complemented_angle_y,
                      sensor_mpu9250_data.complemented_angle_z

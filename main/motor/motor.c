@@ -12,7 +12,7 @@ const double Kp = 4.0;
 const double Kd = 4.0;
 const double Ki = 4.0;
 
-double tAngleX, tAngleY, tAngleZ;
+double   tAngleX, tAngleY, tAngleZ;
 uint32_t throttle;
 
 esp_err_t motor_init()
@@ -83,16 +83,13 @@ void stop_motor()
 
 void motor_task(void *pvParameters)
 {
-    static double ResX, ResY, ResZ;
+    static double   ResX, ResY, ResZ;
     mpu9250_data_t *p_mpu9250_data = get_mpu9250_data();
+
+    vTaskDelay(pdMS_TO_TICKS(1000));
 
     while (1)
     {
-        if (!p_mpu9250_data->is_calibrated)
-        {
-            vTaskDelay(pdMS_TO_TICKS(100));
-        }
-
         if (throttle == 0)
         {
             p_mpu9250_data->complemented_angle_x = 0;
