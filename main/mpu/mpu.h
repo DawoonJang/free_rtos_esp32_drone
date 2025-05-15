@@ -32,8 +32,8 @@ typedef struct
     double acc_x_offset,              acc_y_offset,              acc_z_offset;
     double angular_velocity_x_offset, angular_velocity_y_offset, angular_velocity_z_offset;
 
-    double complemented_angle_x,           complemented_angle_y,           complemented_angle_z;
-    double calidbrated_angular_velocity_x, calidbrated_angular_velocity_y, calidbrated_angular_velocity_z;
+    double complemented_angle_x,          complemented_angle_y,          complemented_angle_z;
+    double calibrated_angular_velocity_x, calibrated_angular_velocity_y, calibrated_angular_velocity_z;
     double delta_t;
 } mpu9250_data_t;
 

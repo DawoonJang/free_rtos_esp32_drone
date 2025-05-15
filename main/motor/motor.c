@@ -102,9 +102,9 @@ void motor_task(void *pvParameters)
         const double eAngleY = tAngleY - p_mpu9250_data->complemented_angle_y;
         const double eAngleZ = tAngleZ - p_mpu9250_data->complemented_angle_z;
 
-        double BalX = Kp * eAngleX + Kd * -p_mpu9250_data->calidbrated_angular_velocity_x;
-        double BalY = Kp * eAngleY + Kd * -p_mpu9250_data->calidbrated_angular_velocity_y;
-        double BalZ = Kp * eAngleZ + Kd * -p_mpu9250_data->calidbrated_angular_velocity_z;
+        double BalX = Kp * eAngleX + Kd * -p_mpu9250_data->calibrated_angular_velocity_x;
+        double BalY = Kp * eAngleY + Kd * -p_mpu9250_data->calibrated_angular_velocity_y;
+        double BalZ = Kp * eAngleZ + Kd * -p_mpu9250_data->calibrated_angular_velocity_z;
 
         if (throttle == 0)
         {
@@ -135,17 +135,6 @@ void motor_task(void *pvParameters)
         accel_motor(MOTOR_CHANNEL_RU, speedB);
         accel_motor(MOTOR_CHANNEL_RL, speedC);
         accel_motor(MOTOR_CHANNEL_LL, speedD);
-
-        // SET LOG
-        // ESP_LOGE(TAG,
-        //          "Speed A:%ld B:%ld C:%ld D:%ld | Throttle:%ld BalX:%.2f BalY:%.2f BalZ:%.2f | AngleX:%.2f AngleY:%.2f AngleZ:%.2f",
-        //          speedA, speedB, speedC, speedD,
-        //          throttle, BalX, BalY, BalZ,
-        //          p_mpu9250_data->complemented_angle_x,
-        //          p_mpu9250_data->complemented_angle_y,
-        //          p_mpu9250_data->complemented_angle_z
-        // );
-
 
         // 주기 10ms
         vTaskDelay(pdMS_TO_TICKS(10));

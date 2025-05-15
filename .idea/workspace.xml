@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="8" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
@@ -167,10 +167,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="update readme and trim code">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="fix build issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/motor/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +201,9 @@
     &quot;accountId&quot;: &quot;fa550985-f05f-4f05-b7ff-65f082803940&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main/mpu/mpu.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -237,7 +242,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C/C++&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -1070,7 +1075,12 @@
       <workItem from="1746516728111" duration="58000" />
       <workItem from="1746516795123" duration="1294000" />
       <workItem from="1746528716965" duration="2832000" />
-      <workItem from="1746710112820" duration="1341000" />
+      <workItem from="1746710112820" duration="1494000" />
+      <workItem from="1746797795964" duration="1863000" />
+      <workItem from="1746881966885" duration="2686000" />
+      <workItem from="1746884678701" duration="677000" />
+      <workItem from="1747226066001" duration="2466000" />
+      <workItem from="1747316499428" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1144,7 +1154,39 @@
       <option name="project" value="LOCAL" />
       <updated>1746532516134</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1746712649933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746712649933</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1746799171589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746799171589</updated>
+    </task>
+    <task id="LOCAL-00012" summary="improve mpu9250 calibration">
+      <option name="closed" value="true" />
+      <created>1746884649037</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746884649037</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix build issue">
+      <option name="closed" value="true" />
+      <created>1747227298673</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747227298673</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1160,9 +1202,11 @@
     <MESSAGE value="add pid control and sensor calibrated" />
     <MESSAGE value="fix delta time" />
     <MESSAGE value="fix build" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="update readme and trim code" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme and trim code" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="improve mpu9250 calibration" />
+    <MESSAGE value="fix build issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build issue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

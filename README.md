@@ -110,3 +110,55 @@ resulting in accurate and drift-resistant angle estimates over time.
 
 For example, complemented_angleₓ and complemented_angleᵧ can be used
 for stable control feedback in embedded motion systems.
+
+#### 5. Control: PID-based Attitude Stabilization
+
+To maintain stable flight, the drone uses a PID controller (Proportional–Integral–Derivative) to correct its orientation based on the estimated angles from the complementary filter.
+
+The goal is to minimize the error between the target angles (e.g., from remote input or flight plan) and the current estimated angles.
+
+(1) Error Calculation
+For each axis (X, Y, Z), compute the difference between the target angle and the estimated angle:
+
+```
+errorₓ = target_angleₓ − estimated_angleₓ  
+errorᵧ = target_angleᵧ − estimated_angleᵧ  
+error𝓏 = target_angle𝓏 − estimated_angle𝓏
+```
+
+(2) PID Control Logic
+
+The PID controller calculates a correction value using the following terms:
+
+```
+P-term: Kp × error (proportional to current error)  
+I-term: Ki × ∫error dt (accumulates past error over time)  
+D-term: Kd × d(error)/dt (based on angular velocity)
+```
+
+The full control signal for each axis is:
+
+```
+controlₓ = Kp × errorₓ + Ki × ∫errorₓ dt − Kd × gyroₓ  
+controlᵧ = Kp × errorᵧ + Ki × ∫errorᵧ dt − Kd × gyroᵧ  
+control𝓏 = Kp × error𝓏 + Ki × ∫error𝓏 dt − Kd × gyro𝓏
+```
+
+The integral term is reset when the throttle is zero to prevent integral windup during idle state.
+
+(3) Motor Mixing
+
+The control signals are combined with the base throttle to determine the PWM duty for each motor:
+
+```
+motorₐ = throttle + controlₓ − controlᵧ + control𝓏  
+motorᵦ = throttle − controlₓ − controlᵧ − control𝓏  
+motor𝒸 = throttle − controlₓ + controlᵧ + control𝓏  
+motor𝒹 = throttle + controlₓ + controlᵧ − control𝓏
+```
+
+This mixing scheme distributes the correction forces across the quadcopter’s four motors to control pitch, roll, and yaw simultaneously.
+
+(4) Timing
+
+The PID control loop is executed every 10 milliseconds to ensure responsive but stable updates.

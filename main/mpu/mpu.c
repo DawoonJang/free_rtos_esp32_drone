@@ -185,16 +185,16 @@ void mpu9250_task(void *pvParameters)
             sensor_mpu9250_data.delta_t = (double) (t_now - t_prev) / 1000000.0; // 초 단위
             t_prev                      = t_now;
 
-            sensor_mpu9250_data.calidbrated_angular_velocity_x =
+            sensor_mpu9250_data.calibrated_angular_velocity_x =
                     (float) sensor_mpu9250_data.angular_velocity_x_raw / GYROXYZ_TO_DEGREES_PER_SEC;
-            sensor_mpu9250_data.calidbrated_angular_velocity_y =
+            sensor_mpu9250_data.calibrated_angular_velocity_y =
                     (float) sensor_mpu9250_data.angular_velocity_y_raw / GYROXYZ_TO_DEGREES_PER_SEC;
-            sensor_mpu9250_data.calidbrated_angular_velocity_z =
+            sensor_mpu9250_data.calibrated_angular_velocity_z =
                     (float) sensor_mpu9250_data.angular_velocity_z_raw / GYROXYZ_TO_DEGREES_PER_SEC;
 
-            angle_x += sensor_mpu9250_data.calidbrated_angular_velocity_x * sensor_mpu9250_data.delta_t;
-            angle_y += sensor_mpu9250_data.calidbrated_angular_velocity_y * sensor_mpu9250_data.delta_t;
-            angle_z += sensor_mpu9250_data.calidbrated_angular_velocity_z * sensor_mpu9250_data.delta_t;
+            angle_x += sensor_mpu9250_data.calibrated_angular_velocity_x * sensor_mpu9250_data.delta_t;
+            angle_y += sensor_mpu9250_data.calibrated_angular_velocity_y * sensor_mpu9250_data.delta_t;
+            angle_z += sensor_mpu9250_data.calibrated_angular_velocity_z * sensor_mpu9250_data.delta_t;
 
             const double AcYZD = sqrt(pow(sensor_mpu9250_data.acceleration_y_raw, 2) + pow(sensor_mpu9250_data.acceleration_z_raw, 2));
             const double AcXZD = sqrt(pow(sensor_mpu9250_data.acceleration_x_raw, 2) + pow(sensor_mpu9250_data.acceleration_z_raw, 2));
@@ -205,23 +205,19 @@ void mpu9250_task(void *pvParameters)
 
             // Complementary Filter
             sensor_mpu9250_data.complemented_angle_x =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.
-                             calidbrated_angular_velocity_x *
-                             sensor_mpu9250_data.delta_t)
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_x + sensor_mpu9250_data.calibrated_angular_velocity_x * sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleX;
             sensor_mpu9250_data.complemented_angle_y =
-                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.
-                             calidbrated_angular_velocity_y *
-                             sensor_mpu9250_data.delta_t)
+                    ALPHA * (sensor_mpu9250_data.complemented_angle_y + sensor_mpu9250_data.calibrated_angular_velocity_y * sensor_mpu9250_data.delta_t)
                     + (1.0 - ALPHA) * acAngleY;
             sensor_mpu9250_data.complemented_angle_z = angle_z;
 
             // SET LOG
             ESP_LOGI(TAG,
                      "angular_velocity X:%.2f Y:%.2f Z:%.2f | angke X:%.2f Y:%.2f Z:%.2f",
-                     sensor_mpu9250_data.calidbrated_angular_velocity_x,
-                     sensor_mpu9250_data.calidbrated_angular_velocity_y,
-                     sensor_mpu9250_data.calidbrated_angular_velocity_z,
+                     sensor_mpu9250_data.calibrated_angular_velocity_x,
+                     sensor_mpu9250_data.calibrated_angular_velocity_y,
+                     sensor_mpu9250_data.calibrated_angular_velocity_z,
                      sensor_mpu9250_data.complemented_angle_x,
                      sensor_mpu9250_data.complemented_angle_y,
                      sensor_mpu9250_data.complemented_angle_z
