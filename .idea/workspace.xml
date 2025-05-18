@@ -167,12 +167,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="fix build issue">
+    <list default="true" id="16ac7667-a240-4d62-b3d9-fbabd0c29ae7" name="변경" comment="fix typo and update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/motor/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/motor/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/mpu/mpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/main/mpu/mpu.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +243,11 @@
   }
 }</component>
   <component name="RunManager" selected="Shell Script.flash_monitor">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="__idf_app_trace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="esp" TARGET_NAME="__idf_app_trace" CONFIG_NAME="Debug-esp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -1080,7 +1081,7 @@
       <workItem from="1746881966885" duration="2686000" />
       <workItem from="1746884678701" duration="677000" />
       <workItem from="1747226066001" duration="2466000" />
-      <workItem from="1747316499428" duration="1242000" />
+      <workItem from="1747316499428" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="mpu setup">
       <option name="closed" value="true" />
@@ -1186,7 +1187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747227298673</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix typo and update readme">
+      <option name="closed" value="true" />
+      <created>1747318006131</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747318006131</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1206,7 +1215,8 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="improve mpu9250 calibration" />
     <MESSAGE value="fix build issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix build issue" />
+    <MESSAGE value="fix typo and update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix typo and update readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

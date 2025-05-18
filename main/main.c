@@ -12,15 +12,16 @@ static const char *TAG = "MAIN";
 
 static void initialize(void)
 {
-    ESP_ERROR_CHECK(motor_init());
-    ESP_ERROR_CHECK(init_i2c_master());
-    ESP_ERROR_CHECK(mpu9250_init());
+	 ESP_ERROR_CHECK(motor_init());
+	 ESP_ERROR_CHECK(init_i2c_master());
+	 ESP_ERROR_CHECK(mpu9250_init());
 }
 
 void app_main(void)
 {
-    initialize();
+	 initialize();
 
-    xTaskCreate(motor_task, "motor_task", 2048, NULL, 5, NULL);
-    xTaskCreate(mpu9250_task, "sensor_task", 4096, NULL, 5, NULL);
+	 xTaskCreate(motor_task, "motor_task", 8192, NULL, 5, NULL);
+	 xTaskCreate(mpu9250_task, "sensor_task", 8192, NULL, 5, NULL);
+	 xTaskCreate(auto_aviation_task, "sensor_task", 8192, NULL, 6, NULL);
 }
