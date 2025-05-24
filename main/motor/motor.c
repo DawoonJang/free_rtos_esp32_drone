@@ -8,9 +8,9 @@
 
 static const char *TAG = "MOTOR";
 
-const double Kp = 4.0;
-const double Kd = 4.0;
-const double Ki = 4.0;
+const double Kp = 2.0;
+const double Kd = 0.5;
+const double Ki = 0.01;
 
 double	target_angle_x, target_angle_y, target_angle_z;
 uint32_t throttle;
@@ -75,11 +75,6 @@ void stop_motor()
 void auto_aviation_task(void *pvParameters)
 {
 	 vTaskDelay(pdMS_TO_TICKS(1000));
-
-	 // while (1)
-	 // {
-	 //   ;
-	 // }
 
 	 for (int thr = 0; thr < 475; thr++)
 	 { // 475*4 = 1900밀리 초간 상승
@@ -147,16 +142,21 @@ void motor_task(void *pvParameters)
 		  balance_correction_y += integral_term_angle_y;
 		  balance_correction_z += integral_term_angle_z;
 
-		  // 모터 속도 계산
-		  const int32_t speedA = throttle + balance_correction_x - balance_correction_y + balance_correction_z;
-		  const int32_t speedB = throttle - balance_correction_x - balance_correction_y - balance_correction_z;
-		  const int32_t speedC = throttle - balance_correction_x + balance_correction_y + balance_correction_z;
-		  const int32_t speedD = throttle + balance_correction_x + balance_correction_y - balance_correction_z;
+		  int32_t speed_lu_motor = throttle + balance_correction_x - balance_correction_y + balance_correction_z;
+		  int32_t speed_ru_motor = throttle - balance_correction_x - balance_correction_y - balance_correction_z;
+		  int32_t speed_rl_motor = throttle - balance_correction_x + balance_correction_y + balance_correction_z;
+		  int32_t speed_ll_motor = throttle + balance_correction_x + balance_correction_y - balance_correction_z;
 
-		  accel_motor(MOTOR_CHANNEL_LU, speedA);
-		  accel_motor(MOTOR_CHANNEL_RU, speedB);
-		  accel_motor(MOTOR_CHANNEL_RL, speedC);
-		  accel_motor(MOTOR_CHANNEL_LL, speedD);
+
+		  speed_lu_motor = CLAMP(speed_lu_motor, 0, 1000);
+		  speed_ru_motor = CLAMP(speed_ru_motor, 0, 1000);
+		  speed_ll_motor = CLAMP(speed_ll_motor, 0, 1000);
+		  speed_rl_motor = CLAMP(speed_rl_motor, 0, 1000);
+
+		  accel_motor(MOTOR_CHANNEL_LU, speed_lu_motor);
+		  accel_motor(MOTOR_CHANNEL_RU, speed_ru_motor);
+		  accel_motor(MOTOR_CHANNEL_RL, speed_rl_motor);
+		  accel_motor(MOTOR_CHANNEL_LL, speed_ll_motor);
 
 		  vTaskDelay(pdMS_TO_TICKS(10));
 	 }
